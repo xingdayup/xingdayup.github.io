@@ -1,0 +1,1287 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=dark>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/me.png">
+  <link rel="icon" href="/img/me.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Jesse Chen">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="最近实验室主任听说复旦的某位老师依靠UKB数据库发表了很多大期刊，于是对该数据库表现出极大的兴趣，而我们小组依靠实验室资金已将数据库购入使用，所以要求我们向他汇报一下数据库详细情况以及数据构成。现通过互联网资料、个人使用经历，经Gemini整理，初步发布如下： UK Biobank：数据类型、研究应用与展望I. UK Biobank简介A. UK Biobank是什么？（使命、规模、目标）UK B">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UKB数据库介绍">
+<meta property="og:url" content="https://xingdayup.github.io/2025/05/31/ukb_introduction/index.html">
+<meta property="og:site_name" content="ChenJinxing&#39;s Blog">
+<meta property="og:description" content="最近实验室主任听说复旦的某位老师依靠UKB数据库发表了很多大期刊，于是对该数据库表现出极大的兴趣，而我们小组依靠实验室资金已将数据库购入使用，所以要求我们向他汇报一下数据库详细情况以及数据构成。现通过互联网资料、个人使用经历，经Gemini整理，初步发布如下： UK Biobank：数据类型、研究应用与展望I. UK Biobank简介A. UK Biobank是什么？（使命、规模、目标）UK B">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-05-31T12:25:32.000Z">
+<meta property="article:modified_time" content="2025-05-31T13:15:23.993Z">
+<meta property="article:author" content="Jesse Chen">
+<meta property="article:tag" content="原创">
+<meta property="article:tag" content="UKB">
+<meta property="article:tag" content="数据库">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>UKB数据库介绍 - ChenJinxing&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"xingdayup.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"vdZLnTIdTwJmBWlW8LgSqJcp-gzGzoHsz","app_key":"SraJp3AuS35E7IyflZgQqEt2","server_url":"https://vdzlntid.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      ChenJinxing&#39;s Blog
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="UKB数据库介绍"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-05-31 20:25" pubdate>
+          May 31, 2025 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          14k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          121 mins
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">UKB数据库介绍</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>最近实验室主任听说复旦的某位老师依靠UKB数据库发表了很多大期刊，于是对该数据库表现出极大的兴趣，而我们小组依靠实验室资金已将数据库购入使用，所以要求我们向他汇报一下数据库详细情况以及数据构成。现通过互联网资料、个人使用经历，经Gemini整理，初步发布如下：</p>
+<h1 id="UK-Biobank：数据类型、研究应用与展望"><a href="#UK-Biobank：数据类型、研究应用与展望" class="headerlink" title="UK Biobank：数据类型、研究应用与展望"></a>UK Biobank：数据类型、研究应用与展望</h1><h2 id="I-UK-Biobank简介"><a href="#I-UK-Biobank简介" class="headerlink" title="I. UK Biobank简介"></a>I. UK Biobank简介</h2><h3 id="A-UK-Biobank是什么？（使命、规模、目标）"><a href="#A-UK-Biobank是什么？（使命、规模、目标）" class="headerlink" title="A. UK Biobank是什么？（使命、规模、目标）"></a>A. UK Biobank是什么？（使命、规模、目标）</h3><p>UK Biobank是一个在英国开展的大规模、长期的前瞻性生物样本库研究项目，保存了五十万英国参与者的去标识化生物样本和健康相关数据 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/UK_Biobank">1</a>。该项目于2002年1月成立，Rory Collins爵士教授自2005年起担任首席研究员和首席执行官 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/UK_Biobank">1</a>。</p>
+<p>UK Biobank的使命是“改善对包括癌症、心脏病、中风、糖尿病、关节炎、骨质疏松症、眼疾、抑郁症和多种形式的痴呆症在内的多种严重和危及生命的疾病的预防、诊断和治疗” 1。它致力于成为“世界上最重要的健康研究数据库” 2。</p>
+<p>该数据库拥有针对其五十万参与者中许多人的超过10,000个变量，储存了超过1500万份生物样本，在线数据库的数据量超过30 PB (petabytes) 1。其人类基因组测序数据库、蛋白质组学数据库和人类影像项目均为全球规模最大 1。如此庞大的规模对于统计功效至关重要，因为只有一小部分参与者会患上任何单一疾病，且暴露因素的影响通常较小 3。</p>
+<p>UK Biobank对全球所有合格研究人员（无论是学术界、商业机构、政府还是慈善机构）的开放获取政策，是其一项重大特征，代表了大规模生物医学数据利用方式的重大转变 2。这促进了广泛的合作，并加速了科学发现，其成就远超单一机构或联盟所能及。传统的大型队列研究数据往往是孤立的，或者仅限于首席研究员及其紧密合作者访问。UK Biobank明确其目标是为全球从事符合公众利益的健康相关研究的获批研究人员提供服务 2。研究分析平台（Research Analysis Platform, RAP）的建立进一步推动了这一目标，它提供了一个通用的环境，并减轻了研究人员下载海量数据的需求，特别是考虑到许多研究机构难以在本地存储和处理高达30 PB以上的数据 1。因此，UK Biobank不仅仅是一个数据存储库，更是一个全球研究生态系统的积极推动者，它普及了对这一无与伦比资源的访问，并促进了多样化的研究方法。这种模式为未来的大规模数据计划树立了典范，强调了合作和开放（但在监管下）的科学精神。</p>
+<h3 id="B-研究设计与参与者"><a href="#B-研究设计与参与者" class="headerlink" title="B. 研究设计与参与者"></a>B. 研究设计与参与者</h3><p>UK Biobank是一项前瞻性队列研究，在2006年至2010年间，从英国22个评估中心（遍布英格兰、苏格兰和威尔士）招募了五十万名年龄在40至69岁之间的参与者 ，并同意分享他们的健康数据，并在此后至少 30 年内接受跟踪;目的是使科学发现能够预防、诊断和治疗疾病1，3。参与者同意通过链接其健康相关记录进行长期随访，并同意将其去标识化的数据和样本用于健康相关的研究 5。这种纵向设计对于研究疾病随时间的发展至关重要。</p>
+<p><strong>表1：UK Biobank概览</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>特征</strong></th>
+<th><strong>详情</strong></th>
+<th><strong>来源</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主要使命</td>
+<td>改善对多种严重疾病的预防、诊断和治疗</td>
+<td>1</td>
+</tr>
+<tr>
+<td>研究类型</td>
+<td>大规模、长期前瞻性队列研究</td>
+<td>1</td>
+</tr>
+<tr>
+<td>参与者数量</td>
+<td>约500,000</td>
+<td>1</td>
+</tr>
+<tr>
+<td>招募年龄</td>
+<td>40-69岁</td>
+<td>3</td>
+</tr>
+<tr>
+<td>招募时期</td>
+<td>2006-2010年</td>
+<td>3</td>
+</tr>
+<tr>
+<td>数据量</td>
+<td>&gt;30 PB (持续增长)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>生物样本</td>
+<td>&gt;1500万份（血液、尿液、唾液）</td>
+<td>1</td>
+</tr>
+<tr>
+<td>全球注册研究人员</td>
+<td>来自&gt;90个国家的&gt;30,000名</td>
+<td>1</td>
+</tr>
+<tr>
+<td>同行评审出版物</td>
+<td>&gt;9,000篇 (截至2023年11月)</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<p><strong>表2：UK Biobank关键里程碑与数据发布时间表</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>年份&#x2F;日期</strong></th>
+<th><strong>关键事件&#x2F;数据发布</strong></th>
+<th><strong>来源</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2002年</td>
+<td>UK Biobank成立</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2006-2010年</td>
+<td>参与者招募 (基线评估)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>2012年3月</td>
+<td>资源启动 (基线数据向研究人员开放)</td>
+<td>13</td>
+</tr>
+<tr>
+<td>2012-2013年</td>
+<td>对约20,000名参与者进行基线评估重复测量（为了校正回归稀释偏倚和评估短期变异）</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2013-2016年</td>
+<td>对约100,000名参与者进行活动监测数据收集</td>
+<td>17</td>
+</tr>
+<tr>
+<td>2014年</td>
+<td>影像研究启动 (目标100,000名参与者)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2017年6月</td>
+<td>全基因组分型数据发布 (全体队列)</td>
+<td>13</td>
+</tr>
+<tr>
+<td>2019年3月</td>
+<td>全外显子组测序(WES)数据发布 (首批50,000名参与者)</td>
+<td>13</td>
+</tr>
+<tr>
+<td>2021年</td>
+<td>约470,000名参与者的WES数据完成</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2023年底</td>
+<td>主要全基因组测序(WGS)发布 (全体500,000名参与者)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2023年10月</td>
+<td>蛋白质组学试点数据发布 (约54,000名参与者, 约3,000种蛋白质)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>持续进行</td>
+<td>健康记录关联 (初级保健、医院、癌症&#x2F;死亡登记)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>持续进行</td>
+<td>在线问卷 (饮食、心理健康、认知功能等)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>持续进行</td>
+<td>重复影像扫描 (目标60,000名参与者)</td>
+<td>8</td>
+</tr>
+</tbody></table>
+<p>值得注意的是，UK Biobank的参与者招募是自愿的，约920万受邀者中，参与率为5.5% 36。研究表明，与普通英国人群相比，UK Biobank的参与者平均而言更为健康，来自社会经济剥夺程度较低的地区 32。他们更少肥胖、吸烟或每日饮酒，报告的健康问题也较少 36。UK Biobank参与者的全因死亡率和癌症发病率也低于同年龄段的普通人群 36。这种“健康志愿者”选择偏倚意味着该队列在患病率研究方面可能不完全代表普通人群。然而，这并不一定影响暴露因素与疾病关系的研究结果，这些结果仍然可以广泛推广 36。在队列内部进行暴露因素（如遗传变异、生活方式因素）与疾病结局之间关联的相对风险评估仍然是有效的，其庞大的样本量也保证了能够稳健地检测这些关联。尽管如此，一些研究表明，对于某些特定疾病或组合（尤其是涉及心理健康或较高多病共存水平的情况），UK Biobank对风险幅度的估计可能比更具代表性的样本更为保守 37。因此，使用UK Biobank数据的研究人员必须意识到这种偏倚，并在研究设计和结果解释中加以考虑，特别是在估计普通人群的绝对风险或患病率时。然而，对于阐明病因学关系，该资源仍然具有非常强大的作用。这一现象也揭示了大型自愿性队列研究中普遍存在的挑战，并强调了仔细进行方法学考量以及在可能的情况下与其他数据源进行比较的必要性。</p>
+<h3 id="C-对健康研究的意义"><a href="#C-对健康研究的意义" class="headerlink" title="C. 对健康研究的意义"></a>C. 对健康研究的意义</h3><p>UK Biobank能够对遗传、环境和生活方式因素在疾病中的复杂相互作用进行研究 6。它已在理解癌症、心脏病和神经退行性疾病等慢性病的方面取得了重大进展 1。数据的深度和广度，结合其大规模和纵向特性，使其成为发现科学的无与伦比的资源 6。截至2023年11月，已有超过9,000篇同行评审的出版物使用了UK Biobank的数据，全球90多个国家的超过30,000名研究人员注册使用该资源 1。</p>
+<p>UK Biobank内多种数据类型（基因组学、蛋白质组学、影像学、生活方式、健康记录等）的整合，正在推动创新的多学科研究，并加速向系统生物学和个性化医疗的转变 1。该生物样本库收集了广泛的数据：生物样本 1、体格测量 1、影像数据 1、遗传数据 1、健康记录 1、问卷数据 1 等。近期在蛋白质组学 1 和代谢组学 15 方面的大规模扩展进一步增加了数据的层次。研究人员可以将这些“组学”数据与深度表型信息（例如影像衍生表型 20）和纵向健康结局相结合。这使得能够对疾病机制进行更全面的理解，超越了单一数据类型的分析 17。因此，UK Biobank不仅仅是不同数据集的集合，更是一个整合系统生物学的平台，对于理解复杂疾病和发展个性化医疗方法至关重要。UK Biobank在这一领域的成功也为全球类似的“多组学”计划提供了范例和路线图。</p>
+<h2 id="II-数据收集概览"><a href="#II-数据收集概览" class="headerlink" title="II. 数据收集概览"></a>II. 数据收集概览</h2><h3 id="A-基线评估-过程、初始数据类型"><a href="#A-基线评估-过程、初始数据类型" class="headerlink" title="A. 基线评估 (过程、初始数据类型)"></a>A. 基线评估 (过程、初始数据类型)</h3><p>基线评估于2006年至2010年间在英国22个评估中心进行 1，每次评估访问持续2-3小时 46。</p>
+<p>评估过程包括电子签署同意书、参与者自行完成的触摸屏问卷、与护士进行的简短计算机辅助访谈、一系列体格测量以及生物样本（血液、尿液和唾液）的收集 1。</p>
+<p>初始数据类型包括：</p>
+<ul>
+<li><strong>问卷数据：</strong> 涵盖生活方式、医疗史、营养习惯、社会人口学因素、家族史、社会心理因素、当地环境、就业、健康状况、用药史、手术史等 1。部分认知功能测试也是触摸屏问卷的一部分 16。</li>
+<li><strong>体格测量：</strong> 包括血压、身高、体重、身体成分（生物电阻抗法）、手握力、肺功能（肺活量测定法）和足跟骨密度等基本变量 1。一些测量项目如动脉硬度、详细的眼科检查（视力、眼底OCT）则是在招募后期针对部分参与者加入的 1。</li>
+<li><strong>生物样本：</strong> 血液（用于提取DNA、血浆、血清、白细胞层）、尿液和唾液（用于提取DNA） 1。</li>
+</ul>
+<p>基线评估方案本身也经历了演变，一些额外的测量项目（例如特定的认知测试、动脉硬度测量、详细的眼科检查、RNA&#x2F;唾液样本采集）是在招募过程中期才被纳入的 16。这意味着并非所有基线数据都适用于全部500,000名参与者。例如，96提到第一类增强表型测量是针对2009年第二季度后招募的最后200,000名参与者提出的。因此，在这些日期之前招募的参与者将不会拥有这些后期增加的特定测量数据。Data Showcase用户指南 16 建议查阅“基本信息”部分以了解时间表，并且试点阶段的数据字段通常会单独列出。因此，研究人员在选择参与者队列或数据字段时，必须注意这些基线测量项目的分阶段引入，因为这些特定测量数据的可用性在整个队列中会有所不同。这种迭代方法虽然导致了一些数据异质性，但也使UK Biobank能够根据在漫长的招募阶段中出现的科学优先事项和技术进步来调整和丰富其数据收集。</p>
+<h3 id="B-重复评估与纵向随访"><a href="#B-重复评估与纵向随访" class="headerlink" title="B. 重复评估与纵向随访"></a>B. 重复评估与纵向随访</h3><p>在2012至2013年间，对约20,000名参与者进行了一次全面的基线评估重复测量 8。这有助于评估测量的短期变异性并校正回归稀释偏倚 17。</p>
+<p>持续的纵向随访主要通过与电子健康记录（EHR）的链接进行，包括死亡、癌症、住院（含重症监护）和初级保健记录 1。这些记录通常每年更新一次 32。</p>
+<p>此外，UK Biobank定期向参与者（约每年两次）发送在线问卷，以收集新的或更详细的数据，特别是对于纵向重复测量或那些不易通过EHR获取的结局信息（如慢性疼痛、心理健康、饮食详情） 8。影像研究也包括对一部分参与者进行重复扫描（例如，由Dementias Platform UK资助的3,000名参与者，以及新的目标为60,000名参与者的重复影像项目），以评估生理随时间的变化 8。</p>
+<p>全面的基线数据、随时间重复的测量以及通过健康记录进行的长期随访相结合，是UK Biobank的核心优势。这种前瞻性设计允许研究人员调查事件的时间顺序，区分因果关系，研究疾病进展，并在临床诊断前很久就识别早期风险因素或生物标志物 1。重复评估（基线重访、重复影像、纵向问卷、未来对重复样本的蛋白质组学分析）提供了个体在其生命周期中暴露因素和生理参数如何变化的数据 1。与健康记录的链接则提供了多年来的客观结局数据 6。这种时间序列数据使研究人员能够在结局发生前评估暴露因素，这对于推断因果关系和避免反向因果关系（即疾病本身改变了暴露因素）至关重要 6。例如，在临床诊断前数年识别出预测痴呆风险的蛋白质 29 或COVID-19感染后大脑结构的变化 1 等研究成果都突显了这一优势。因此，纵向的前瞻性设计是UK Biobank能够为理解疾病病因学以及确定预防和早期干预目标做出贡献的基础。这也强调了对前瞻性队列研究进行长期投资对于公共卫生的巨大价值。</p>
+<h3 id="C-数据关联策略-不同数据源如何连接，EID的作用"><a href="#C-数据关联策略-不同数据源如何连接，EID的作用" class="headerlink" title="C. 数据关联策略 (不同数据源如何连接，EID的作用)"></a>C. 数据关联策略 (不同数据源如何连接，EID的作用)</h3><p>UK Biobank将参与者的基线评估、重复评估、问卷、影像和生物样本分析数据与外部电子健康相关记录进行关联 1。这包括死亡和癌症登记、住院记录（含重症监护）以及初级保健记录 6。</p>
+<p>在每个研究申请中，每位参与者都由一个唯一的7位加密标识符（EID）来识别 68。此EID是针对特定项目的，由一个中央的、不可逆的参与者ID（PID）生成，该PID与UK Biobank安全存储的可识别数据相关联 80。EID是允许研究人员在其批准的项目内关联特定参与者所有去标识化数据的关键。它用于表格数据集的列、批量文件的命名、基因分型的FAM文件以及pVCF文件的头部信息 68。该系统在保护参与者匿名的同时确保了研究目的的数据关联，因为EID在不同的研究申请之间是不可链接的 80。</p>
+<p>项目特定的EID系统是UK Biobank数据治理的关键组成部分，它在促进复杂数据整合的同时，维护了严格的隐私标准，使研究人员能够在不接触直接身份信息的情况下对个体参与者进行强大的多模态分析。UK Biobank为每位参与者收集了大量多样化的数据（遗传、影像、生活方式、健康记录等） 1。其科学价值在于能够关联个体这些不同类型的数据以理解复杂的关系 6。参与者的隐私和数据安全至关重要 7；诸如姓名和NHS号码之类的直接标识符绝不会发布给研究人员 7。UK Biobank采用两级假名化：一个中央PID（与可识别数据链接，但第三方无法逆转）和为每个研究申请从PID生成的项目特定EID 80。EID在提供给特定研究项目的所有数据类型（表格数据、批量文件）中保持一致使用，从而实现项目内的数据链接 68。由于不同项目的EID不同，这可以防止未经授权的数据集合并或跨不同研究小组的重新识别 103。因此，EID系统是一个复杂的解决方案，它平衡了强大研究所需的全面数据链接与保护参与者机密的伦理要求。这种强大的假名化和链接策略是处理敏感多模态数据的其他生物样本库的典范，展示了如何在维护公众信任的同时促进研究。</p>
+<h2 id="III-UK-Biobank中的主要数据类别"><a href="#III-UK-Biobank中的主要数据类别" class="headerlink" title="III. UK Biobank中的主要数据类别"></a>III. UK Biobank中的主要数据类别</h2><p><strong>表3：UK Biobank主要数据类别概览</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>数据类别</strong></th>
+<th><strong>数据类型&#x2F;变量示例</strong></th>
+<th><strong>主要收集方法</strong></th>
+<th><strong>近似参与者数量 (如针对子集指定)</strong></th>
+<th><strong>主要来源概览</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>生物样本</td>
+<td>血液 (血浆、血清、白细胞层、红细胞)、尿液、唾液</td>
+<td>评估中心访视</td>
+<td>全部500,000 (血液、尿液); 100,000 (唾液，基线&#x2F;影像访视时)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>体格测量</td>
+<td>人体测量 (身高、体重、BMI、腰臀围)、血压、肺功能 (肺活量)、握力、骨密度 (足跟)、动脉硬度、心电图、眼科检查、听力</td>
+<td>评估中心访视</td>
+<td>全部500,000 (核心测量); 增强测量的子集 (例如，动脉硬度、眼科&#x2F;听力测试在招募后期加入)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>影像数据</td>
+<td>脑部MRI (结构、功能、弥散)、心脏MRI、腹部MRI、全身DEXA、颈动脉超声、视网膜OCT</td>
+<td>影像评估访视</td>
+<td>目标100,000 (初次); 60,000 (重复); 约85,000 (基线OCT)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>遗传数据</td>
+<td>全基因组分型 (芯片)、基因型填充、全外显子组测序 (WES)、全基因组测序 (WGS)</td>
+<td>血液&#x2F;唾液样本分析</td>
+<td>全部500,000 (分型、WGS、WES [目标])</td>
+<td>1</td>
+</tr>
+<tr>
+<td>健康记录关联</td>
+<td>初级保健 (诊断、处方)、住院记录 (诊断、操作)、癌症登记、死亡登记</td>
+<td>与NHS及其他国家记录关联</td>
+<td>全部500,000 (住院、癌症、死亡); 约230,000 (初级保健初始发布，持续扩展)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>生物标志物</td>
+<td>血液生化 (血脂、HbA1c、激素、肝肾功能)、血液学 (全血细胞计数)、传染病标志物、代谢组学、蛋白质组学、端粒长度</td>
+<td>血液&#x2F;尿液样本分析</td>
+<td>全部500,000 (核心生化、血液学); 其他子集 (例如，12.7万代谢组学，5.4万蛋白质组学试点)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>问卷数据</td>
+<td>生活方式 (吸烟、饮酒、饮食)、社会人口学、医疗史、心理健康、认知功能、疼痛、职业史、食物偏好</td>
+<td>评估中心触摸屏问卷、在线网络问卷</td>
+<td>全部500,000 (基线触摸屏); 约330,000符合在线问卷资格 (各问卷完成率不同)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>活动监测数据</td>
+<td>三轴加速度 (体力活动、睡眠模式)</td>
+<td>腕戴式加速度计 (7天)</td>
+<td>100,000 (初次); 约2,500 (重复)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>环境数据</td>
+<td>空气&#x2F;噪音污染、绿地、温度 (与居住地关联)</td>
+<td>与外部环境数据集关联</td>
+<td>全部500,000 (基线)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>COVID-19特定数据</td>
+<td>检测结果、疫苗接种数据、症状、影响 (通过问卷、健康记录、特定抗体&#x2F;影像研究)</td>
+<td>与NHS记录关联、特定研究&#x2F;问卷</td>
+<td>全部500,000 (关联记录); 特定研究的子集</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<h3 id="A-生物样本"><a href="#A-生物样本" class="headerlink" title="A. 生物样本"></a>A. 生物样本</h3><p>UK Biobank收集的生物样本类型包括血液（约45毫升，从中处理和储存血浆、血清、用于DNA提取的白细胞层以及红细胞）、尿液（约9毫升）和唾液（来自部分参与者，例如在影像&#x2F;重复评估期间的100,000名参与者 8；也在基线时收集 1）。所有500,000名参与者在基线评估时都提供了样本，部分子集（例如，首次重复评估的20,000名参与者 8；用于蛋白质组学的100,000份重复样本 27）还提供了重复样本。</p>
+<p>样本的收集和处理采用Vacutainer系统，并使用各种防腐剂&#x2F;抗凝剂。在评估中心的本地处理被保持在最低限度（例如，在特定的凝固&#x2F;静置时间后离心分离血浆&#x2F;血清）。样本均贴有条形码，并在温控条件下运往中央处理实验室 98。</p>
+<p>超过1500万份样本等分储存在-80°C的大型自动化冰柜设施中，部分DNA样本储存在-20°C 1。这些样本可用于广泛的检测分析，包括遗传学（从血液&#x2F;唾液中提取DNA）、生物化学标志物、血液学标志物、代谢组学、蛋白质组学和传染病血清学检测 1。</p>
+<p>通过全面收集和储存生物样本以实现“面向未来”是UK Biobank持久价值的基石。UK Biobank从数十万参与者那里收集了血液、尿液和唾液等多种类型的生物样本 1，并将其处理成多种组分，如血浆、血清、红细胞和白细胞层（用于DNA提取） 8。在招募后期还增加了RNA血液样本的收集 93。这些样本储存在高度自动化的大型-80°C冰柜中 3。这种前瞻性的样本收集和先进的生物样本库基础设施，使得UK Biobank能够支持当前和未来各种生物化学及分子检测，因为新的检测技术和研究问题会不断涌现。目前已经进行了广泛的基因分型、WES、WGS、生物化学、血液学、代谢组学和蛋白质组学检测 1。随着新的检测技术（如更先进的蛋白质组学或表观基因组学）变得可行且经济高效，它们可以应用于UK Biobank队列。计划将蛋白质组学研究扩展到整个队列便是一个很好的例子 27。因此，全面的样本收集和最先进的生物样本库基础设施确保了UK Biobank在未来几十年内仍将是前沿的研究资源，能够适应未来的科学进步。这一策略最大限度地提高了初始投资和参与者贡献的长期科学回报，为可持续生物样本库的发展树立了典范。</p>
+<h3 id="B-体格测量"><a href="#B-体格测量" class="headerlink" title="B. 体格测量"></a>B. 体格测量</h3><p>在评估中心对参与者进行了一系列广泛的体格和功能测量 1。这些测量也在20,000名参与者的重访评估和100,000名参与者的影像学访视重访中重复进行 5。</p>
+<p><strong>表4：评估中心收集的体格测量示例</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>体格测量</strong></th>
+<th><strong>简要描述</strong></th>
+<th><strong>使用设备 (示例)</strong></th>
+<th><strong>Data Showcase类别 (示例)</strong></th>
+<th><strong>主要来源</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>血压</td>
+<td>自动和手动收缩压&#x2F;舒张压读数，脉率</td>
+<td>Omron数字血压计，手动血压计</td>
+<td>100011</td>
+<td>48</td>
+</tr>
+<tr>
+<td>动脉硬度</td>
+<td>手指脉搏波分析，硬度指数</td>
+<td>PulseTrace PCA2 (CareFusion)</td>
+<td>100007</td>
+<td>50</td>
+</tr>
+<tr>
+<td>肺功能 (肺活量)</td>
+<td>FVC, FEV1, PEF</td>
+<td>Vitalograph Pneumotrac 6800</td>
+<td>100020</td>
+<td>55</td>
+</tr>
+<tr>
+<td>手握力</td>
+<td>左手和右手等长握力</td>
+<td>Jamar J00105液压手握力计</td>
+<td>100019</td>
+<td>52</td>
+</tr>
+<tr>
+<td>足跟骨密度</td>
+<td>跟骨超声测量BMD, QUI, T评分</td>
+<td>Sahara Clinical Bone Sonometer</td>
+<td>100018</td>
+<td>54</td>
+</tr>
+<tr>
+<td>人体测量</td>
+<td>身高、体重、腰臀围、生物电阻抗法身体成分</td>
+<td>(概述性材料中未具体说明设备，但默认为标准工具)</td>
+<td>100008 (子类别 100010, 100009)</td>
+<td>44</td>
+</tr>
+<tr>
+<td>听力测试</td>
+<td>自动化噪声中语音测试评估听阈</td>
+<td>带耳机的触摸屏系统</td>
+<td>100049</td>
+<td>51</td>
+</tr>
+<tr>
+<td>心电图 (静息)</td>
+<td>12导联心电图</td>
+<td>GE Cardiosoft ver. 6</td>
+<td>104</td>
+<td>122</td>
+</tr>
+<tr>
+<td>心电图 (运动)</td>
+<td>静态自行车运动中4导联心电图</td>
+<td>CAM-USB 6.5, Cardiosoft v6.51, eBike</td>
+<td>100012</td>
+<td>124</td>
+</tr>
+<tr>
+<td>颈动脉超声</td>
+<td>内中膜厚度 (IMT) 和斑块评估</td>
+<td>超声机</td>
+<td>101</td>
+<td>49</td>
+</tr>
+</tbody></table>
+<p>这些数据可通过Data Showcase访问（体格测量的主类别为100006，各具体测量有其子类别，如血压为100011等） 47。</p>
+<p>UK Biobank对体格测量采用标准化设备和详细方案，并在22个评估中心统一执行，同时进行重复评估，这确保了数据的高度质量和一致性，对于可靠的流行病学分析和检测与健康结局的细微关联至关重要 1。通常会列出具体设备型号（例如，Omron血压计、Jamar握力计、Vitalograph肺功能仪、PulseTrace动脉硬度仪、Sahara骨密度仪） 52。Data Showcase为许多这些测量提供了方案文件和资源的链接（例如，血压的110，颈动脉超声的49等）。重复评估 8 有助于评估测量可靠性和个体随时间变化的生物学变异。评估中心环境（ACE）软件用于数据收集，也表明了数据采集过程的标准化 87。因此，对标准化流程和特定仪器的强调，以及质量控制信息（例如，肺功能QC测量字段20255 114，握力计校准信息 52），极大地促进了大型队列中体格测量数据的稳健性和可比性。这种严谨的表型分析方法对于下游研究的有效性至关重要，特别是对于GWAS和其他旨在将表型与遗传或环境因素联系起来的研究。</p>
+<h3 id="C-影像数据"><a href="#C-影像数据" class="headerlink" title="C. 影像数据"></a>C. 影像数据</h3><p>UK Biobank拥有世界上最大的多模态影像研究数据，包括脑部MRI（结构T1、T2 FLAIR；功能fMRI - 任务态和静息态；弥散dMRI；SWI）、心脏MRI、腹部MRI、全身DEXA和颈动脉超声 1。此外，还收集了视网膜OCT数据 1。</p>
+<p>目标是对100,000名参与者进行初次扫描，并对其中一部分（例如60,000名）进行重复影像扫描，以研究随时间发生的变化 8。</p>
+<p>所有影像中心均采用标准化方案。脑部MRI使用3T西门子Skyra扫描仪，心脏和腹部MRI使用1.5T西门子Aera扫描仪 56。采用了特定的序列（例如，dMRI方向、心脏电影序列、shMOLLI、腹部Dixon序列） 56。</p>
+<p>从原始影像中提取了影像衍生表型（IDPs），这些是定量的测量指标，例如脑容量、白质高信号、皮层厚度&#x2F;表面积；心室容量、射血分数、主动脉扩张性；肝脏脂肪&#x2F;铁含量、内脏脂肪、肌肉质量等 20。这些IDPs通常通过自动化流程生成，有时基于机器学习算法 56。</p>
+<p>数据格式包括原始影像（如DICOM、NIFTI）和衍生表型（表格数据） 56。颈动脉超声数据也以.mat格式提供 58。</p>
+<p>大规模影像数据使得在群体水平上研究器官结构和功能成为可能，这些影像衍生表型（IDPs）可作为数量性状用于关联研究（例如，与遗传、生活方式的关联）。重复影像则捕捉了纵向变化，有助于识别疾病的临床前标志物 20。将影像数据与其他数据（遗传、健康记录）整合，能够阐明从风险因素到器官层面变化再到临床结局的通路 18。例如，关于痴呆症或COVID-19感染后的大脑变化，以及糖尿病患者心脏重塑的研究都体现了这一点 1。这种深度表型分析对于理解疾病的病理生理学具有不可估量的价值。</p>
+<h3 id="D-遗传数据"><a href="#D-遗传数据" class="headerlink" title="D. 遗传数据"></a>D. 遗传数据</h3><ul>
+<li><strong>全基因组分型 (Genotyping):</strong> 约500,000名参与者。使用Affymetrix UK Biobank Axiom和UK BiLEVE Axiom芯片，直接测量约850,000个变异位点 8。</li>
+<li><strong>基因型填充 (Imputed Genotypes):</strong> 使用Haplotype Reference Consortium、UK10K + 1000 Genomes等参考面板，填充了超过9000万个变异位点 8。</li>
+<li><strong>全外显子组测序 (WES):</strong> 约470,000名参与者的数据（目标500,000）。靶向基因组的约2%（蛋白质编码区）。采用IDT xGen Exome Research Panel v1.0捕获，Illumina NovaSeq 6000测序 8。</li>
+<li><strong>全基因组测序 (WGS):</strong> 全部500,000名参与者的数据。采用Illumina NovaSeq技术。是全球最大的WGS数据集，数据量达27.5 PB 1。</li>
+<li><strong>质量控制 (QC):</strong> 进行了集中的数据分析，包括基因型质量检查、群体结构分析、亲缘关系评估、定相和基因型填充 8。详细信息可在Data Showcase的遗传学部分找到 8。WGS处理流程的详细信息见特定的FAQ和技术文档 25。</li>
+<li><strong>数据格式:</strong> 基因分型数据（如PLINK格式）、填充数据（BGEN格式）、WES&#x2F;WGS数据（VCF、pVCF、CRAM、BGEN格式） 24。</li>
+<li><strong>数据获取:</strong> 通过UK Biobank研究分析平台 (UKB-RAP) 获取 8。</li>
+</ul>
+<p>UK Biobank拥有前所未有规模的遗传数据（50万人的基因分型、WES和WGS数据） 1，这为精准医疗和药物发现奠定了坚实基础。如此大规模的数据使得研究人员能够进行强有力的全基因组关联研究（GWAS），以识别与广泛性状和疾病相关的遗传变异 18。同时，它也促进了孟德尔随机化研究，用于推断因果关系 18，并支持多基因风险评分的开发以预测疾病风险 17。这些遗传数据对于识别新的药物靶点至关重要，已有研究表明，具有人类遗传学证据支持的药物获得批准的可能性是没有此类证据药物的两倍以上 17。将遗传数据与蛋白质组学及其他组学数据整合，进一步增强了这一潜力 27。这一全面的基因组资源正在加速个性化医疗的进展。</p>
+<h3 id="E-健康记录关联"><a href="#E-健康记录关联" class="headerlink" title="E. 健康记录关联"></a>E. 健康记录关联</h3><ul>
+<li><strong>记录类型:</strong> 初级保健（GP记录——诊断、处方、转诊）、医院住院数据（诊断、操作流程）、癌症登记数据、死亡登记数据 6。COVID-19检测和疫苗接种数据也已关联 8。</li>
+<li><strong>覆盖范围:</strong> 整个队列的医院、癌症、死亡记录。初级保健记录最初覆盖约230,000人，并计划扩展 8。数据通常每年更新 32。</li>
+<li><strong>编码系统:</strong> ICD-9、ICD-10（诊断、死亡原因）、OPCS-3、OPCS-4（医院操作流程）、Read codes (CTV-3)（初级保健）、BNF&#x2F;DM+D（药物） 33。</li>
+<li><strong>衍生数据:</strong> “首次发生”数据字段（将各种来源的临床编码映射到3字符ICD-10编码）和针对某些疾病的算法定义健康结局 33。</li>
+</ul>
+<p>通过记录关联实现的纵向健康结局追踪，为研究提供了客观的、长期的疾病发病率和死亡率数据。这对于前瞻性研究至关重要，可以将基线暴露因素与后来的健康事件联系起来。它补充了自我报告数据，减少了回忆偏倚，并使得研究疾病轨迹、医疗资源利用和治疗效果成为可能。尽管如此，在不同编码系统和数据提供者之间进行数据协调，以及确保数据的完整性和准确性，仍然是挑战 84。这些丰富的关联记录极大地增强了基线数据和分子数据的研究价值。</p>
+<h3 id="F-生物标志物"><a href="#F-生物标志物" class="headerlink" title="F. 生物标志物"></a>F. 生物标志物</h3><ul>
+<li><strong>血液生化指标:</strong> 在所有50万名参与者的基线样本中检测了约34种标志物（如血脂、糖化血红蛋白、性激素、肝肾功能、类风湿因子），并在2万名参与者的重复评估中再次检测 8。</li>
+<li><strong>血液学指标:</strong> 在基线和首次重复访视时对新鲜血液样本进行了全血细胞计数及相关参数的检测 8。</li>
+<li><strong>传染病标志物:</strong> 通过Luminex多重分析平台对10,000名参与者（试点研究，后扩展至50,000名）的20种病原体进行了血清学抗体应答检测 8。</li>
+<li><strong>代谢组学标志物:</strong> Nightingale Health平台通过核磁共振（NMR）技术对基线和重复评估的血液样本进行代谢组学分析，测量超过200种代谢物（如脂质、脂蛋白亚类、脂肪酸组成等）。2021年已发布127,000名参与者的数据，并持续扩展 8。</li>
+<li><strong>蛋白质组学标志物:</strong> 一项大规模研究，旨在通过Olink Explore HT平台在600,000份样本（50万基线样本 + 10万份长达15年后的重复样本）中测量多达5,400种蛋白质。2023年10月发布了试点数据（54,000名参与者，约3,000种蛋白质），完整数据集预计从2026年起分批发布 1。</li>
+<li><strong>端粒长度:</strong> 作为生物学年龄的染色体标志物，在基线和重复评估的DNA样本中进行测量 8。</li>
+</ul>
+<p>大规模的分子表型分析为健康研究提供了前所未有的机遇。生物标志物能够揭示生理状态和疾病过程的深刻信息。通过对整个队列进行多种生物标志物（包括生物化学、血液学、代谢组学和蛋白质组学指标）的大规模检测，研究人员能够识别新的疾病标志物、风险因素和治疗靶点。将生物标志物数据与遗传、生活方式和结局数据相结合，可以实现对健康和疾病的多层次理解。特别是蛋白质组学计划，其规模和深度在全球领先，有望彻底改变我们对蛋白质水平如何随年龄和疾病状态变化的理解 27。</p>
+<h3 id="G-问卷数据"><a href="#G-问卷数据" class="headerlink" title="G. 问卷数据"></a>G. 问卷数据</h3><ul>
+<li><strong>基线触摸屏问卷:</strong> 内容全面，涵盖社会人口学特征、生活方式（吸烟、饮酒、饮食概况）、医疗史、家族史、就业状况、早期生活因素、心理健康指标以及认知功能测试 1。</li>
+<li><strong>在线随访问卷:</strong> 定期发送给约33万名提供电子邮件地址的参与者。主题包括详细的24小时膳食回顾（重复进行）、认知功能（重复进行）、疼痛（重复进行）、职业史、心理健康（重复进行）、消化系统健康、食物偏好、睡眠、视觉化&#x2F;记忆能力、社交&#x2F;专注能力等 8。</li>
+<li><strong>数据结构:</strong> 回答可以是分类的、连续的或自由文本（尽管自由文本通常会被编码或限制以进行去标识化）。触摸屏问卷内置逻辑检查功能 87。</li>
+</ul>
+<p>问卷数据能够捕捉到那些难以通过电子健康记录或体格测量获取的丰富信息，例如详细的饮食习惯、心理健康状况、疼痛体验、特定的生活习惯以及神经多样性特征。纵向问卷调查则能够追踪这些因素随时间的变化。这对于研究生活方式和社会心理因素对健康的影响至关重要。</p>
+<h3 id="H-活动监测数据"><a href="#H-活动监测数据" class="headerlink" title="H. 活动监测数据"></a>H. 活动监测数据</h3><ul>
+<li><strong>设备:</strong> 腕戴式三轴加速度计 (Axivity AX3) 1。</li>
+<li><strong>收集数据:</strong> 连续7天记录原始三轴加速度数据 (100Hz) 1。</li>
+<li><strong>参与者:</strong> 约100,000名参与者 (2013-2016年)，其中一部分子集 (约2,500名) 进行了季节性重复测量 1。</li>
+<li><strong>衍生变量:</strong> 处理后的数据可提供体力活动持续时间、强度、睡眠模式以及活动模式&#x2F;聚类等测量指标 19。</li>
+</ul>
+<p>活动监测数据克服了自我报告活动量的局限性和偏倚，提供了关于日常活动模式和睡眠的详细、客观数据。这使得研究人员能够探究客观测量的活动&#x2F;睡眠与广泛健康结局之间的联系。</p>
+<h3 id="I-环境数据"><a href="#I-环境数据" class="headerlink" title="I. 环境数据"></a>I. 环境数据</h3><ul>
+<li><strong>数据类型:</strong> 通过与外部环境数据集的链接，提供有关空气污染（如PM2.5, NOx）、噪音污染（如道路交通噪音）、绿地可及性、海岸线距离、气温、建成环境特征、道路网络属性等信息，这些信息与参与者的居住地点（为研究目的地理编码至1公里精度）相关联 8。</li>
+<li><strong>意义:</strong> 使得研究人员能够调查环境暴露如何影响健康，通常与遗传和生活方式因素结合进行分析。关于道路交通噪音与心血管疾病&#x2F;死亡率的研究成果即为例证 1。</li>
+</ul>
+<h3 id="J-COVID-19特定数据"><a href="#J-COVID-19特定数据" class="headerlink" title="J. COVID-19特定数据"></a>J. COVID-19特定数据</h3><ul>
+<li><strong>数据类型:</strong> 包括COVID-19诊断检测结果（PCR、抗体）、住院记录（含重症监护）、死亡记录、与COVID-19相关的初级保健记录、疫苗接种数据。此外，还在20,000名参与者及其子女中进行了SARS-CoV-2抗体研究，并对约2,000名参与者进行了COVID-19重复影像研究 1。</li>
+<li><strong>意义:</strong> UK Biobank迅速调动资源以研究COVID-19感染和疫苗接种的决定因素及后果。关于COVID-19感染后大脑变化以及肥胖作为重症COVID-19风险因素的研究成果均基于此 1。</li>
+</ul>
+<h2 id="IV-数据结构与访问"><a href="#IV-数据结构与访问" class="headerlink" title="IV. 数据结构与访问"></a>IV. 数据结构与访问</h2><h3 id="A-数据组织：EID与数据字段-Data-Fields"><a href="#A-数据组织：EID与数据字段-Data-Fields" class="headerlink" title="A. 数据组织：EID与数据字段 (Data-Fields)"></a>A. 数据组织：EID与数据字段 (Data-Fields)</h3><ul>
+<li><strong>EID (加密标识符):</strong> 每个申请中，每位参与者拥有一个唯一的7位数字EID，用于关联其所有数据 68。</li>
+<li><strong>数据字段 (Data-Fields):</strong> 所有数据均组织成特定的变量（即数据字段），每个字段拥有唯一的ID。研究人员申请访问数据字段的子集 68。</li>
+<li><strong>实例 (Instances) 与数组 (Arrays):</strong> 数据字段可以有多个实例（例如，重复的访视&#x2F;问卷）或呈数组形式（单个实例的多个相关值） 68。</li>
+</ul>
+<h3 id="B-数据导航：UK-Biobank-Data-Showcase"><a href="#B-数据导航：UK-Biobank-Data-Showcase" class="headerlink" title="B. 数据导航：UK Biobank Data Showcase"></a>B. 数据导航：UK Biobank Data Showcase</h3><ul>
+<li><strong>目的:</strong> Data Showcase是一个可公开访问的在线目录，包含了UK Biobank中所有数据字段和资源的详细信息 5。</li>
+<li><strong>功能:</strong> 用户可以通过关键词或字段ID进行搜索；按类别层级进行浏览；查看数据字段描述、值类型、编码方式、参与者数量、收集方法、注释以及相关资源&#x2F;文档 5。每个数据字段页面包含数据 (Data)、实例 (Instances)、注释 (Notes)、相关字段 (Related Fields) 和资源 (Resources) 等标签页 132。</li>
+<li>数据字段结构示例:<ul>
+<li><strong>简单类型 (例如，身高 - Field ID 50):</strong> 值类型 (连续型)，单位 (cm)，实例 (基线、重复测量) 69。</li>
+<li><strong>编码类型 (例如，ICD-10诊断 - Field ID 41270):</strong> 值类型 (分类多选型)，数组 (每位参与者可有多个诊断)，关联到数据编码表以解释代码含义 69。</li>
+<li><strong>批量数据 (例如，WGS CRAM文件 - Field ID 23193):</strong> 项目类型 (批量)，文件命名规范 (<EID><em>&lt;FIELD−ID&gt;</em>…)，文件夹结构 68。</li>
+</ul>
+</li>
+</ul>
+<h3 id="C-数据访问：研究分析平台-RAP-与数据字典"><a href="#C-数据访问：研究分析平台-RAP-与数据字典" class="headerlink" title="C. 数据访问：研究分析平台 (RAP) 与数据字典"></a>C. 数据访问：研究分析平台 (RAP) 与数据字典</h3><ul>
+<li><strong>UKB-RAP:</strong> 一个安全的、基于云的平台 (由DNAnexus&#x2F;AWS支持)，用于访问和分析UK Biobank数据，特别是像WGS和影像这样的大型数据集。这是目前默认的数据访问方式 2。</li>
+<li><strong>数据字典:</strong> 研究人员可以在RAP上使用命令行界面 (CLI) 命令 (<code>dx extract_dataset -ddd</code>) 为其项目生成一个特定的数据字典。这个CSV文件包含了项目中所有字段的元数据 132。</li>
+<li><strong>UK Biobank GitHub:</strong> 提供Jupyter Notebooks，用于以编程方式访问元数据和执行基本数据操作 132。</li>
+</ul>
+<p>考虑到UK Biobank数据的巨大体量（超过10,000个变量，超过30 PB）、复杂性（多样的数据类型、实例、数组、编码）以及其不断发展的特性（新的数据发布、增强功能），诸如Data Showcase和RAP这样的工具不仅仅是便利设施，更是必不可少的基础设施 1。研究人员需要一种方法来理解哪些数据可用、如何收集、其结构以及任何相关的文档或QC信息，以便在分析之前（和分析期间）进行有效利用 5。Data Showcase作为一个全面的、可搜索的公共目录，为每个数据字段提供了详细的元数据，包括收集方法、值类型、编码和资源链接，从而满足了这一需求 5。RAP则为访问和分析这些数据提供了实际环境，特别是对于那些因体积过大而难以本地下载的“批量”文件（如基因组学、影像学数据） 2。RAP上的项目特定数据字典生成器和GitHub上的Notebooks等工具进一步帮助了数据的理解和利用 132。因此，Data Showcase和RAP是UK Biobank可用性和可访问性的组成部分，使研究人员能够有效地利用其巨大的潜力，尽管其本身具有复杂性。这些平台为如何使大型复杂的生物医学数据集变得易于管理并为广泛的研究社区所用树立了榜样，促进了透明度和有效的数据利用。</p>
+<h2 id="V-伦理考量与数据访问"><a href="#V-伦理考量与数据访问" class="headerlink" title="V. 伦理考量与数据访问"></a>V. 伦理考量与数据访问</h2><h3 id="A-伦理与治理框架"><a href="#A-伦理与治理框架" class="headerlink" title="A. 伦理与治理框架"></a>A. 伦理与治理框架</h3><p>UK Biobank在一个严格的治理框架下运作，该框架由伦理委员会（例如，由Anneke Lucassen教授主持的UK Biobank伦理咨询委员会）和数据咨询委员会指导 38。参与者的知情同意涵盖了将其数据用于健康相关研究、再次联系以及健康记录关联的广泛用途 1。</p>
+<p>数据的去标识化是核心原则：直接标识符（如姓名、地址、NHS号码）在提供给研究人员的数据集中被移除，并替换为编码的EID 1。研究人员同意不尝试重新识别参与者 38。关于不向参与者反馈个体研究结果（包括偶然的遗传发现）的政策，理由是临床有效性和潜在负担，尽管这是一个持续的伦理讨论议题 38。</p>
+<h3 id="B-研究人员访问程序"><a href="#B-研究人员访问程序" class="headerlink" title="B. 研究人员访问程序"></a>B. 研究人员访问程序</h3><p>UK Biobank资源向全球合格的研究人员（学术界、商业机构、慈善组织）开放，用于进行符合公众利益的健康相关研究 2。 （注意：自2025年1月起，不再批准保险公司直接访问去标识化的UK Biobank数据 9）。</p>
+<p>申请通过访问管理系统（AMS）进行，包括注册、提交研究计划、选择数据字段、确定合作者以及指定材料转让协议（MTA）的签署人 5。审核过程包括UK Biobank团队的检查、背景调查以及针对公共利益的科学审查。有争议的申请可能会提交给访问委员会或理事会 5。访问需要支付费用（5中提到分级系统，但9详细说明了申请费和样本费用），并为中低收入国家的研究人员提供支持 5。MTA要求研究人员保护数据安全并将研究成果公开发表 7，并且需要提交年度进展报告 139。</p>
+<h2 id="VI-未来方向与增强功能"><a href="#VI-未来方向与增强功能" class="headerlink" title="VI. 未来方向与增强功能"></a>VI. 未来方向与增强功能</h2><p>UK Biobank是一个动态发展的资源，其数据收集和增强工作持续进行中。未来的方向包括继续进行重复影像扫描、开展新的问卷调查、以及持续的健康记录关联 8。</p>
+<p>蛋白质组学研究将扩展至整个队列，预计数据将在2026-2027年间发布，同时代谢组学研究也将进一步深入 27。研究分析平台（RAP）将继续开发和完善，以更好地支持研究需求 8。此外，新的总部大楼正在建设中，这将为UK Biobank的运营提供更好的支持 2。</p>
+<p>未来的核心目标之一是整合多组学数据与深度表型信息以及纵向临床数据，以推动个性化医疗的发展 27。</p>
+<h2 id="VII-结论"><a href="#VII-结论" class="headerlink" title="VII. 结论"></a>VII. 结论</h2><p>UK Biobank作为一个大规模、深度表型化、纵向的生物医学研究资源，其独特的价值和对全球健康研究的贡献是毋庸置疑的。它通过收集和整合海量的遗传、生活方式、环境暴露、生物样本、体格测量、医学影像以及健康记录数据，为揭示复杂疾病的病因、识别风险因素、开发新的诊断和治疗方法提供了前所未有的机遇。</p>
+<p>其开放获取的模式、严格的伦理治理框架以及持续的数据增强和技术创新，使其成为全球科研人员的重要工具，极大地推动了在癌症、心血管疾病、神经退行性疾病等多个领域的科学发现。从分子层面到社会环境因素，UK Biobank所涵盖的数据类型的广度和深度，以及这些数据随时间推移的动态关联，为理解人类健康和疾病的复杂性提供了独特的视角，并持续为改善公共卫生和实现个性化医疗的目标做出贡献。</p>
+<h2 id="VIII-参考文档"><a href="#VIII-参考文档" class="headerlink" title="VIII. 参考文档"></a>VIII. 参考文档</h2><ol>
+<li>UK Biobank - Wikipedia, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/UK_Biobank">https://en.wikipedia.org/wiki/UK_Biobank</a></li>
+<li>UK Biobank - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/">https://www.ukbiobank.ac.uk/</a></li>
+<li>About us - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/learn-more-about-uk-biobank/about-us">https://www.ukbiobank.ac.uk/learn-more-about-uk-biobank/about-us</a></li>
+<li>About us - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/learn-more-about-uk-biobank/about-us/">https://www.ukbiobank.ac.uk/learn-more-about-uk-biobank/about-us/</a></li>
+<li>Full article: UK Biobank: what can it do, how you can use it and how is it being used?, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.tandfonline.com/doi/full/10.1080/07366205.2024.2441639">https://www.tandfonline.com/doi/full/10.1080/07366205.2024.2441639</a></li>
+<li>Protocol for a large-scale prospective epidemiological resource - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/media/3sbeknnz/ukbiobank_protocol.pdf">https://www.ukbiobank.ac.uk/media/3sbeknnz/ukbiobank_protocol.pdf</a></li>
+<li>Accessing data and data security - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/explore-your-participation/stay-involved/uk-biobank-newsletter-homepage-2023-24/accessing-data-and-data-security">https://www.ukbiobank.ac.uk/explore-your-participation/stay-involved/uk-biobank-newsletter-homepage-2023-24/accessing-data-and-data-security</a></li>
+<li>About our data - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/about-our-data">https://www.ukbiobank.ac.uk/enable-your-research/about-our-data</a></li>
+<li>Apply for access - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access/">https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access/</a></li>
+<li>UK Biobank Limited - Report and Financial Statements, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/media/mp5bgbc0/2024-uk-biobank-ltd-signed-2024-report-and-financial-statements.pdf">https://www.ukbiobank.ac.uk/media/mp5bgbc0/2024-uk-biobank-ltd-signed-2024-report-and-financial-statements.pdf</a></li>
+<li>UK Biobank Research Analysis Platform, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/research-analysis-platform/">https://www.ukbiobank.ac.uk/enable-your-research/research-analysis-platform/</a></li>
+<li>UK Biobank: An Open Access Resource for Identifying the Causes of …, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001779">https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001779</a></li>
+<li>Learn more about UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/learn-more-about-uk-biobank">https://www.ukbiobank.ac.uk/learn-more-about-uk-biobank</a></li>
+<li>Past data releases - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/past-data-releases">https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/past-data-releases</a></li>
+<li>What types of data are available in UK Biobank? – UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://community.ukbiobank.ac.uk/hc/en-gb/articles/23472796568861-What-types-of-data-are-available-in-UK-Biobank">https://community.ukbiobank.ac.uk/hc/en-gb/articles/23472796568861-What-types-of-data-are-available-in-UK-Biobank</a></li>
+<li>UK Biobank Showcase User Guide: Getting Started, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ctsu.ox.ac.uk/~bbdatan/ShowcaseUserGuide.pdf">https://biobank.ctsu.ox.ac.uk/~bbdatan/ShowcaseUserGuide.pdf</a></li>
+<li>UK Biobank—A Unique Resource for Discovery and Translation Research on Genetics and Neurologic Disease - PMC, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11796045/">https://pmc.ncbi.nlm.nih.gov/articles/PMC11796045/</a></li>
+<li>UK Biobank—A Unique Resource for Discovery and Translation Research on Genetics and Neurologic Disease, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.neurology.org/doi/10.1212/NXG.0000000000200226">https://www.neurology.org/doi/10.1212/NXG.0000000000200226</a></li>
+<li>Large Scale Population Assessment of Physical Activity Using Wrist Worn Accelerometers: The UK Biobank Study | PLOS One, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0169649">https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0169649</a></li>
+<li>Imaging data - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/imaging-data">https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/imaging-data</a></li>
+<li>World’s most ambitious imaging study scans 60,000th participant - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/learn-more-about-uk-biobank/news/world-s-most-ambitious-imaging-study-scans-60-000th-participant">https://www.ukbiobank.ac.uk/learn-more-about-uk-biobank/news/world-s-most-ambitious-imaging-study-scans-60-000th-participant</a></li>
+<li>Imaging data - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/imaging-data/">https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/imaging-data/</a></li>
+<li>About our data - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/">https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/</a></li>
+<li>Genetic data - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/genetic-data">https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/genetic-data</a></li>
+<li>Exome Data Release FAQs December 2019 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/media/mvcneyik/uk-biobank-50k-exome-release-faq-december-2019.pdf">https://www.ukbiobank.ac.uk/media/mvcneyik/uk-biobank-50k-exome-release-faq-december-2019.pdf</a></li>
+<li>Genetic data - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/genetic-data/">https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/genetic-data/</a></li>
+<li>UK Biobank launches the world’s largest protein study to unlock new medical breakthroughs - Queen Mary University of London, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.qmul.ac.uk/media/news/2025/medicine-and-dentistry/fmd/uk-biobank-launches-the-worlds-largest-protein-study-to-unlock-new-medical-breakthroughs.html">https://www.qmul.ac.uk/media/news/2025/medicine-and-dentistry/fmd/uk-biobank-launches-the-worlds-largest-protein-study-to-unlock-new-medical-breakthroughs.html</a></li>
+<li>UK Biobank 500k Whole Genome Sequencing Release FAQs, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/media/dovbae03/uk-biobank-final-whole-genome-sequencing-release-faqs_v1-0.pdf">https://www.ukbiobank.ac.uk/media/dovbae03/uk-biobank-final-whole-genome-sequencing-release-faqs_v1-0.pdf</a></li>
+<li>UK Biobank Launches World’s Largest Study of Blood Proteins, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.biobanking.com/uk-biobank-launches-worlds-largest-study-of-blood-proteins/">https://www.biobanking.com/uk-biobank-launches-worlds-largest-study-of-blood-proteins/</a></li>
+<li>Launch of world’s most significant protein study set to usher in new understanding for medicine - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/learn-more-about-uk-biobank/news/launch-of-world-s-most-significant-protein-study-set-to-usher-in-new-understanding-for-medicine">https://www.ukbiobank.ac.uk/learn-more-about-uk-biobank/news/launch-of-world-s-most-significant-protein-study-set-to-usher-in-new-understanding-for-medicine</a></li>
+<li>UK Biobank Launches Largest Proteomics Study for Disease Research, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.technologynetworks.com/proteomics/news/uk-biobank-launches-largest-proteomics-study-for-disease-research-394841">https://www.technologynetworks.com/proteomics/news/uk-biobank-launches-largest-proteomics-study-for-disease-research-394841</a></li>
+<li>Enable your research - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research">https://www.ukbiobank.ac.uk/enable-your-research</a></li>
+<li>UK Biobank administration - GitLab, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://choishingwan.gitlab.io/ukb-administration/">https://choishingwan.gitlab.io/ukb-administration/</a></li>
+<li>Health-related outcomes data - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/health-related-outcomes-data/">https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/health-related-outcomes-data/</a></li>
+<li>Questionnaire data - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/questionnaire-data/">https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/questionnaire-data/</a></li>
+<li>Comparison of Sociodemographic and Health-Related Characteristics of UK Biobank Participants With Those of the General Population | American Journal of Epidemiology | Oxford Academic, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://academic.oup.com/aje/article/186/9/1026/3883629">https://academic.oup.com/aje/article/186/9/1026/3883629</a></li>
+<li>Associations between multimorbidity and adverse health outcomes in UK Biobank and the SAIL Databank: A comparison of longitudinal cohort studies | PLOS Medicine, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003931">https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003931</a></li>
+<li>UK Biobank: The World’s Largest Health Database Explained, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.news-medical.net/health/UK-Biobank-The-Worlde28099s-Largest-Health-Database-Explained.aspx">https://www.news-medical.net/health/UK-Biobank-The-Worlde28099s-Largest-Health-Database-Explained.aspx</a></li>
+<li>Prospective study design and data analysis in UK Biobank - UConn Health - University of Connecticut, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://health.uconn.edu/pepper-center/wp-content/uploads/sites/272/2024/01/scitranslmed.adf4428.pdf">https://health.uconn.edu/pepper-center/wp-content/uploads/sites/272/2024/01/scitranslmed.adf4428.pdf</a></li>
+<li>LUKB: preparing local UK Biobank data for analysis - Oxford Academic, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://academic.oup.com/bioinformaticsadvances/article/4/1/vbae176/7888913">https://academic.oup.com/bioinformaticsadvances/article/4/1/vbae176/7888913</a></li>
+<li>The UK Biobank resource with deep phenotyping and genomic data - PMC, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6786975/">https://pmc.ncbi.nlm.nih.gov/articles/PMC6786975/</a></li>
+<li>Demonstrating paths for unlocking the value of cloud genomics through cross cohort analysis - PMC - PubMed Central, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10480504/">https://pmc.ncbi.nlm.nih.gov/articles/PMC10480504/</a></li>
+<li>Manifold fitting reveals metabolomic heterogeneity and disease associations in UK Biobank populations | PNAS, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.pnas.org/doi/10.1073/pnas.2500001122">https://www.pnas.org/doi/10.1073/pnas.2500001122</a></li>
+<li>UK Biobank - Dataset - Health Data Research Gateway, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://healthdatagateway.org/en/dataset/700">https://healthdatagateway.org/en/dataset/700</a></li>
+<li>UK Biobank: a globally important resource for cancer research - PMC, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9938115/">https://pmc.ncbi.nlm.nih.gov/articles/PMC9938115/</a></li>
+<li>UK Biobank’s baseline assessment, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://community.ukbiobank.ac.uk/hc/en-gb/articles/15466972373149-UK-Biobank-s-baseline-assessment">https://community.ukbiobank.ac.uk/hc/en-gb/articles/15466972373149-UK-Biobank-s-baseline-assessment</a></li>
+<li>: Category 100006 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100006">https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100006</a></li>
+<li>: Category 100011 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100011">https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100011</a></li>
+<li>: Category 101 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=101">https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=101</a></li>
+<li>: Category 100007 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100007">https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100007</a></li>
+<li>: Category 100049 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100049">https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100049</a></li>
+<li>: Category 100019 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100019">https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100019</a></li>
+<li>: Category 100008 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100008">https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100008</a></li>
+<li>: Category 100018 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100018">https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100018</a></li>
+<li>: Category 100020 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100020">https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100020</a></li>
+<li>Imaging Data - UK Biobank Community, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://community.ukbiobank.ac.uk/hc/en-gb/articles/24618819821981-Imaging-Data">https://community.ukbiobank.ac.uk/hc/en-gb/articles/24618819821981-Imaging-Data</a></li>
+<li>UK Biobank Brain Imaging - Acquisition Protocol, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.fmrib.ox.ac.uk/ukbiobank/protocol/">https://www.fmrib.ox.ac.uk/ukbiobank/protocol/</a></li>
+<li>Most recent data releases - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/most-recent-data-releases">https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/most-recent-data-releases</a></li>
+<li>Causal relationships involving brain imaging-derived phenotypes based on UKB imaging cohort: a review of Mendelian randomization studies - PubMed Central, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11266110/">https://pmc.ncbi.nlm.nih.gov/articles/PMC11266110/</a></li>
+<li>Cardiovascular magnetic resonance imaging in the UK Biobank: a major international health research resource | European Heart Journal - Oxford Academic, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://academic.oup.com/ehjcimaging/article/22/3/251/5961503">https://academic.oup.com/ehjcimaging/article/22/3/251/5961503</a></li>
+<li>Imaging in population science: Cardiovascular magnetic resonance in 100000 participants of UK Biobank - Rationale, challenges and approaches - ResearchGate, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.researchgate.net/publication/236956365_Imaging_in_population_science_Cardiovascular_magnetic_resonance_in_100000_participants_of_UK_Biobank_-_Rationale_challenges_and_approaches">https://www.researchgate.net/publication/236956365_Imaging_in_population_science_Cardiovascular_magnetic_resonance_in_100000_participants_of_UK_Biobank_-_Rationale_challenges_and_approaches</a></li>
+<li>Associations of cognitive performance with cardiovascular magnetic resonance phenotypes in the UK Biobank | European Heart Journal - Oxford Academic, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://academic.oup.com/ehjcimaging/article/23/5/663/6275095">https://academic.oup.com/ehjcimaging/article/23/5/663/6275095</a></li>
+<li>Be part of the world’s largest whole-body scanning project to transform the way we diagnose, prevent and treat our most chronic diseases - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/get-involved/imaging-project">https://www.ukbiobank.ac.uk/get-involved/imaging-project</a></li>
+<li>Cohort profile: rationale and methods of UK Biobank repeat imaging study eye measures to study dementia - PubMed Central, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10314584/">https://pmc.ncbi.nlm.nih.gov/articles/PMC10314584/</a></li>
+<li>: Data-Field 20250 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=20250">https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=20250</a></li>
+<li>: Data-Field 25780 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=25780">https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=25780</a></li>
+<li>: Data-Field 22423 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=22423">https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=22423</a></li>
+<li>Data structure | Research Analysis Platform, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://dnanexus.gitbook.io/uk-biobank-rap/getting-started/data-structure">https://dnanexus.gitbook.io/uk-biobank-rap/getting-started/data-structure</a></li>
+<li>Finding data and how it is organised - UK Biobank Community, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://community.ukbiobank.ac.uk/hc/en-gb/articles/26121043854365-Finding-data-and-how-it-is-organised">https://community.ukbiobank.ac.uk/hc/en-gb/articles/26121043854365-Finding-data-and-how-it-is-organised</a></li>
+<li>Streamlining Large-Scale Genomic Data Management: Insights from the UK Biobank Whole-Genome Sequencing Data - PubMed, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/39974066/">https://pubmed.ncbi.nlm.nih.gov/39974066/</a></li>
+<li>biobank.ctsu.ox.ac.uk, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ctsu.ox.ac.uk/ukb/ukb/docs/bgen12formats.pdf">https://biobank.ctsu.ox.ac.uk/ukb/ukb/docs/bgen12formats.pdf</a></li>
+<li>UK Biobank Data: About the Data &amp; How to Apply for Access - YouTube, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=RZPMmobKnTw">https://www.youtube.com/watch?v=RZPMmobKnTw</a></li>
+<li>Comprehensive whole-genome analyses of the UK Biobank reveal significant sex differences in both genotype missingness and allele frequency on the X chromosome - PubMed Central, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10939428/">https://pmc.ncbi.nlm.nih.gov/articles/PMC10939428/</a></li>
+<li>The UK Biobank resource with deep phenotyping and genomic data, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.chg.ox.ac.uk/publications/922082">https://www.chg.ox.ac.uk/publications/922082</a></li>
+<li>Genetic and Phenotypic Features of Schizophrenia in the UK Biobank - PubMed, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/38536179/">https://pubmed.ncbi.nlm.nih.gov/38536179/</a></li>
+<li>Associations of Combined Genetic and Lifestyle Risks With Incident Cardiovascular Disease and Diabetes in the UK Biobank Study - PubMed, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/29955826/">https://pubmed.ncbi.nlm.nih.gov/29955826/</a></li>
+<li>Pan-UK Biobank GWAS improves discovery, analysis of genetic architecture, and resolution into ancestry-enriched effects | medRxiv, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.medrxiv.org/content/10.1101/2024.03.13.24303864v2.full-text">https://www.medrxiv.org/content/10.1101/2024.03.13.24303864v2.full-text</a></li>
+<li>Pan-UK Biobank GWAS improves discovery, analysis of genetic architecture, and resolution into ancestry-enriched effects | medRxiv, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.medrxiv.org/content/10.1101/2024.03.13.24303864v1.full-text">https://www.medrxiv.org/content/10.1101/2024.03.13.24303864v1.full-text</a></li>
+<li>UK Biobank: A Prospective Cohort Epidemiology Study | PPT - SlideShare, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.slideshare.net/slideshow/uk-biobank-a-prospective-cohort-epidemiology-study-156322377/156322377">https://www.slideshare.net/slideshow/uk-biobank-a-prospective-cohort-epidemiology-study-156322377/156322377</a></li>
+<li>Summary de-identification protocol V2.1 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/media/3kmh2t1z/de-identification-protocol-v-2-1-29-06-22.pdf">https://www.ukbiobank.ac.uk/media/3kmh2t1z/de-identification-protocol-v-2-1-29-06-22.pdf</a></li>
+<li>: Data-Field 22828 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=22828">https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=22828</a></li>
+<li>: Data-Field 22418 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=22418">https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=22418</a></li>
+<li>biobank.ndph.ox.ac.uk, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=23193">https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=23193</a></li>
+<li>(PDF) Health Outcomes Linkage in UK Biobank - ResearchGate, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.researchgate.net/publication/383933722_Health_Outcomes_Linkage_in_UK_Biobank">https://www.researchgate.net/publication/383933722_Health_Outcomes_Linkage_in_UK_Biobank</a></li>
+<li>Cardiovascular magnetic resonance imaging in the UK Biobank: a major international health research resource - PubMed, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/33164079/">https://pubmed.ncbi.nlm.nih.gov/33164079/</a></li>
+<li>Most recent data releases - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/most-recent-data-releases/">https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/most-recent-data-releases/</a></li>
+<li>biobank.ndph.ox.ac.uk, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/showcase/docs/Touchscreen.pdf">https://biobank.ndph.ox.ac.uk/showcase/showcase/docs/Touchscreen.pdf</a></li>
+<li>Biomarker data - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/biomarker-data/">https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/biomarker-data/</a></li>
+<li>: Data-Field 25931 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ctsu.ox.ac.uk/ukb/field.cgi?id=25931">https://biobank.ctsu.ox.ac.uk/ukb/field.cgi?id=25931</a></li>
+<li>: Data-Field 21094 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=21094">https://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=21094</a></li>
+<li>: Category 158 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/ukb/label.cgi?id=158">https://biobank.ndph.ox.ac.uk/ukb/label.cgi?id=158</a></li>
+<li>biobank.ndph.ox.ac.uk, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=100081">https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=100081</a></li>
+<li>Baseline assessment data collection - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/ukb/exinfo.cgi?src=baseline_data">https://biobank.ndph.ox.ac.uk/ukb/exinfo.cgi?src=baseline_data</a></li>
+<li>Clustering Accelerometer Activity Patterns from the UK Biobank Cohort - PMC, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8709415/">https://pmc.ncbi.nlm.nih.gov/articles/PMC8709415/</a></li>
+<li>Cognitive Test Scores in UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4844168/">https://pmc.ncbi.nlm.nih.gov/articles/PMC4844168/</a></li>
+<li>Category 1 enhanced phenotyping at baseline assessment visit in last 200,000 participants and subsequent invitation to complete - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/media/wqehbw2a/addendum-protocol-1.pdf">https://www.ukbiobank.ac.uk/media/wqehbw2a/addendum-protocol-1.pdf</a></li>
+<li>: Category 100000 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100000">https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=100000</a></li>
+<li>The UK Biobank sample handling and storage protocol for the collection, processing and archiving of human blood and urine - Oxford Academic, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://academic.oup.com/ije/article-pdf/37/2/234/2363117/dym276.pdf">https://academic.oup.com/ije/article-pdf/37/2/234/2363117/dym276.pdf</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.ukbiobank.ac.uk/">www.ukbiobank.ac.uk</a>, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/biological-samples/">https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/biological-samples/</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.ukbiobank.ac.uk/">www.ukbiobank.ac.uk</a>, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/wp-content/uploads/2020/06/UK-Biobank-Data-Linkage-Strategy-2020.pdf">https://www.ukbiobank.ac.uk/wp-content/uploads/2020/06/UK-Biobank-Data-Linkage-Strategy-2020.pdf</a></li>
+<li>Sleep disorders predict dementia risk years before diagnosis, study shows, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.news-medical.net/news/20250528/Sleep-disorders-predict-dementia-risk-years-before-diagnosis-study-shows.aspx">https://www.news-medical.net/news/20250528/Sleep-disorders-predict-dementia-risk-years-before-diagnosis-study-shows.aspx</a></li>
+<li>Summary de-identification protocol V2 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/media/5bvp0vqw/de-identification-protocol.pdf">https://www.ukbiobank.ac.uk/media/5bvp0vqw/de-identification-protocol.pdf</a></li>
+<li>UK Biobank data linkage &#x2F; guidance notes, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/media/5grfxsro/uk-biobank-data-linkage-1.pdf">https://www.ukbiobank.ac.uk/media/5grfxsro/uk-biobank-data-linkage-1.pdf</a></li>
+<li>Views on genetic data &amp; ethics - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/explore-your-participation/stay-involved/uk-biobank-newsletter-homepage-2023-24/views-on-genetic-data-ethics">https://www.ukbiobank.ac.uk/explore-your-participation/stay-involved/uk-biobank-newsletter-homepage-2023-24/views-on-genetic-data-ethics</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.ukbiobank.ac.uk/">www.ukbiobank.ac.uk</a>, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/media/5jpr5i2z/uk-biobank-physical-activity-monitor-data-release-userguide-v1-0.pdf">https://www.ukbiobank.ac.uk/media/5jpr5i2z/uk-biobank-physical-activity-monitor-data-release-userguide-v1-0.pdf</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.ukbiobank.ac.uk/">www.ukbiobank.ac.uk</a>, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/activity-monitor-data/">https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/activity-monitor-data/</a></li>
+<li>FURTHER INFORMATION LEAFLET | UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/media/cupmn0ih/further-information-leaflet.pdf">https://www.ukbiobank.ac.uk/media/cupmn0ih/further-information-leaflet.pdf</a></li>
+<li>: Data-Field 100006 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=100006">https://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=100006</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.ukbiobank.ac.uk/">www.ukbiobank.ac.uk</a>, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/physical-measures-data/">https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/physical-measures-data/</a></li>
+<li>: Category 100011 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/ukb/label.cgi?id=100011">https://biobank.ndph.ox.ac.uk/ukb/label.cgi?id=100011</a></li>
+<li>missing blood pressure - UK Biobank Community, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://community.ukbiobank.ac.uk/hc/en-gb/community/posts/21175408245661-missing-blood-pressure">https://community.ukbiobank.ac.uk/hc/en-gb/community/posts/21175408245661-missing-blood-pressure</a></li>
+<li>: Category 100007 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/ukb/label.cgi?id=100007">https://biobank.ndph.ox.ac.uk/ukb/label.cgi?id=100007</a></li>
+<li>The pathogenesis, predictive value and clinical utility of arterial stiffness. - Approved research, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/approved-research/the-pathogenesis-predictive-value-and-clinical-utility-of-arterial-stiffness/">https://www.ukbiobank.ac.uk/enable-your-research/approved-research/the-pathogenesis-predictive-value-and-clinical-utility-of-arterial-stiffness/</a></li>
+<li>: Category 100020 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/ukb/label.cgi?id=100020">https://biobank.ndph.ox.ac.uk/ukb/label.cgi?id=100020</a></li>
+<li>naim-panjwani&#x2F;UKBB_spirometry_on_COPD: Analysis of spirometry measures in patients with COPD in the UK Biobank - GitHub, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://github.com/naim-panjwani/UKBB_spirometry_on_COPD">https://github.com/naim-panjwani/UKBB_spirometry_on_COPD</a></li>
+<li>Development of normative values for hand grip strength - Approved research, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/approved-research/development-of-normative-values-for-hand-grip-strength">https://www.ukbiobank.ac.uk/enable-your-research/approved-research/development-of-normative-values-for-hand-grip-strength</a></li>
+<li>: Resource 100232 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ctsu.ox.ac.uk/ukb/refer.cgi?id=100232">https://biobank.ctsu.ox.ac.uk/ukb/refer.cgi?id=100232</a></li>
+<li>: Category 100018 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/ukb/label.cgi?id=100018">https://biobank.ndph.ox.ac.uk/ukb/label.cgi?id=100018</a></li>
+<li>: Data-Field 100018 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=100018">https://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=100018</a></li>
+<li>: Category 100008 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ctsu.ox.ac.uk/ukb/label.cgi?id=100008">https://biobank.ctsu.ox.ac.uk/ukb/label.cgi?id=100008</a></li>
+<li>: Category 100049 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/ukb/label.cgi?id=100049">https://biobank.ndph.ox.ac.uk/ukb/label.cgi?id=100049</a></li>
+<li>Electrocardiogram data - UK Biobank Community, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://community.ukbiobank.ac.uk/hc/en-gb/articles/22779513769885-Electrocardiogram-data">https://community.ukbiobank.ac.uk/hc/en-gb/articles/22779513769885-Electrocardiogram-data</a></li>
+<li>: Category 104 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ctsu.ox.ac.uk/ukb/label.cgi?id=104">https://biobank.ctsu.ox.ac.uk/ukb/label.cgi?id=104</a></li>
+<li>: Category 100012 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ctsu.ox.ac.uk/ukb/label.cgi?id=100012">https://biobank.ctsu.ox.ac.uk/ukb/label.cgi?id=100012</a></li>
+<li>Observational and genetic evidence support a relationship between cardiac autonomic function and blood pressure - PMC, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10315649/">https://pmc.ncbi.nlm.nih.gov/articles/PMC10315649/</a></li>
+<li>Cohort profile: design and methods in the eye and vision consortium of UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/30796124/">https://pubmed.ncbi.nlm.nih.gov/30796124/</a></li>
+<li>访问时间为 一月 1, 1970， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/media/gnkeyh2k/uk-biobank-whole-genome-sequencing-data-technical-information.pdf">https://www.ukbiobank.ac.uk/media/gnkeyh2k/uk-biobank-whole-genome-sequencing-data-technical-information.pdf</a></li>
+<li>访问时间为 一月 1, 1970， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/wp-content/uploads/2019/09/BCONF-2019-Genetic-Data-Update-vComplete-FINAL.pdf">https://www.ukbiobank.ac.uk/wp-content/uploads/2019/09/BCONF-2019-Genetic-Data-Update-vComplete-FINAL.pdf</a></li>
+<li>Publications - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/publications">https://www.ukbiobank.ac.uk/enable-your-research/publications</a></li>
+<li>UK Biobank Study Quantifies Nature vs. Nurture - JournalFeed, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://journalfeed.org/article-a-day/2025/integrating-the-environmental-and-genetic-architectures-of-aging-and-mortality/">https://journalfeed.org/article-a-day/2025/integrating-the-environmental-and-genetic-architectures-of-aging-and-mortality/</a></li>
+<li>Future data release timelines - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/future-data-release-timelines">https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/future-data-release-timelines</a></li>
+<li>Is there a data dictionary? - UK Biobank Community, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://community.ukbiobank.ac.uk/hc/en-gb/articles/15955597101085-Is-there-a-data-dictionary">https://community.ukbiobank.ac.uk/hc/en-gb/articles/15955597101085-Is-there-a-data-dictionary</a></li>
+<li>: Showcase Homepage - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/">https://biobank.ndph.ox.ac.uk/showcase/</a></li>
+<li>访问时间为 一月 1, 1970， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/showcase/docs/Data_Showcase_User_Guide.pdf">https://biobank.ndph.ox.ac.uk/showcase/showcase/docs/Data_Showcase_User_Guide.pdf</a></li>
+<li>访问时间为 一月 1, 1970， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/media/0a2a55y0/ukb_showcase_user_guide.pdf">https://www.ukbiobank.ac.uk/media/0a2a55y0/ukb_showcase_user_guide.pdf</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.ukbiobank.ac.uk/">www.ukbiobank.ac.uk</a>, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/enable-your-research/understand-our-data-and-samples/">https://www.ukbiobank.ac.uk/enable-your-research/understand-our-data-and-samples/</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.ukbiobank.ac.uk/">www.ukbiobank.ac.uk</a>, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://www.ukbiobank.ac.uk/media/k20j0kgh/website-diagram_what-data-is-available_2023.pdf">https://www.ukbiobank.ac.uk/media/k20j0kgh/website-diagram_what-data-is-available_2023.pdf</a></li>
+<li>: Data-Field 41270 - UK Biobank, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=41270">https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=41270</a></li>
+<li>Submitting an annual report - UK Biobank Community, 访问时间为 五月 31, 2025， <a target="_blank" rel="noopener" href="https://community.ukbiobank.ac.uk/hc/en-gb/articles/15013553517213-Submitting-an-annual-report">https://community.ukbiobank.ac.uk/hc/en-gb/articles/15013553517213-Submitting-an-annual-report</a></li>
+</ol>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BB%8B%E7%BB%8D/" class="category-chain-item">介绍</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%8E%9F%E5%88%9B/" class="print-no-link">#原创</a>
+      
+        <a href="/tags/UKB/" class="print-no-link">#UKB</a>
+      
+        <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="print-no-link">#数据库</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>UKB数据库介绍</div>
+      <div>https://xingdayup.github.io/2025/05/31/ukb_introduction/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>Jesse Chen</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>May 31, 2025</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/05/21/MCCAR_jICA/" title="精神分裂症多基因风险相关多模态MRI额颞叶网络的推导和应用">
+                        <span class="hidden-mobile">精神分裂症多基因风险相关多模态MRI额颞叶网络的推导和应用</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"vdZLnTIdTwJmBWlW8LgSqJcp-gzGzoHsz","appKey":"SraJp3AuS35E7IyflZgQqEt2","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        Views: 
+        <span id="busuanzi_value_site_pv"></span>
+        
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        Visitors: 
+        <span id="busuanzi_value_site_uv"></span>
+        
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
