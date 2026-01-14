@@ -1,0 +1,1408 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=dark>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/me.png">
+  <link rel="icon" href="/img/me.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Jesse Chen">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="研究小组师姐推荐了一篇文献，我进行了学习并且将其与目前工作进行结合联系。文献标题为：《Investigating the shared genetic architecture between depression and subcortical volumes》，探索抑郁症与大脑皮层下结构体积之间的共同遗传基础,文章发表在NC上，发表时间为02 September 2024；  标题和作者信息如">
+<meta property="og:type" content="article">
+<meta property="og:title" content="抑郁症与大脑皮层下结构体积之间的共同遗传基础">
+<meta property="og:url" content="https://xingdayup.github.io/2025/06/11/DepressionAndSubcorticalVolumes/index.html">
+<meta property="og:site_name" content="ChenJinxing&#39;s Blog">
+<meta property="og:description" content="研究小组师姐推荐了一篇文献，我进行了学习并且将其与目前工作进行结合联系。文献标题为：《Investigating the shared genetic architecture between depression and subcortical volumes》，探索抑郁症与大脑皮层下结构体积之间的共同遗传基础,文章发表在NC上，发表时间为02 September 2024；  标题和作者信息如">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://xingdayup.github.io/image/DepressionAndSubcorticalVolumes/image-20250611132422780.png">
+<meta property="og:image" content="https://xingdayup.github.io/2025/06/11/image/DepressionAndSubcorticalVolumes/Brain_Regions.jpg">
+<meta property="og:image" content="https://xingdayup.github.io/image/DepressionAndSubcorticalVolumes/image-20250611164717419.png">
+<meta property="og:image" content="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-024-52121-y/MediaObjects/41467_2024_52121_Fig1_HTML.png?as=webp">
+<meta property="og:image" content="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-024-52121-y/MediaObjects/41467_2024_52121_Fig2_HTML.png?as=webp">
+<meta property="og:image" content="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-024-52121-y/MediaObjects/41467_2024_52121_Fig2_HTML.png?as=webp">
+<meta property="og:image" content="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-024-52121-y/MediaObjects/41467_2024_52121_Fig3_HTML.png?as=webp">
+<meta property="og:image" content="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-024-52121-y/MediaObjects/41467_2024_52121_Fig4_HTML.png?as=webp">
+<meta property="og:image" content="https://xingdayup.github.io/image/DepressionAndSubcorticalVolumes/image-20250611164717419.png">
+<meta property="og:image" content="https://xingdayup.github.io/image/DepressionAndSubcorticalVolumes/image-20250611172353348.png">
+<meta property="article:published_time" content="2025-06-11T05:13:21.000Z">
+<meta property="article:modified_time" content="2025-06-12T07:20:43.484Z">
+<meta property="article:author" content="Jesse Chen">
+<meta property="article:tag" content="原创">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://xingdayup.github.io/image/DepressionAndSubcorticalVolumes/image-20250611132422780.png">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>抑郁症与大脑皮层下结构体积之间的共同遗传基础 - ChenJinxing&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"xingdayup.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"vdZLnTIdTwJmBWlW8LgSqJcp-gzGzoHsz","app_key":"SraJp3AuS35E7IyflZgQqEt2","server_url":"https://vdzlntid.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      ChenJinxing&#39;s Blog
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="抑郁症与大脑皮层下结构体积之间的共同遗传基础"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-06-11 13:13" pubdate>
+          June 11, 2025 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.8k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          40 mins
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">抑郁症与大脑皮层下结构体积之间的共同遗传基础</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>研究小组师姐推荐了一篇文献，我进行了学习并且将其与目前工作进行结合联系。文献标题为：《Investigating the shared genetic architecture between depression and subcortical volumes》，探索抑郁症与大脑皮层下结构体积之间的共同遗传基础,文章发表在NC上，发表时间为02 September 2024；</p>
+<p><img src="/../image/DepressionAndSubcorticalVolumes/image-20250611132422780.png" srcset="/img/loading.gif" lazyload alt="title"></p>
+<p>标题和作者信息如上：</p>
+<p>文章标题为《抑郁症与皮质下体积的共同遗传结构研究》，这个标题对我而言，有两个不太了解1.皮质下体积是什么；2.遗传结构是什么意思？同时对于所有的文献一样，我需要看作者为什么要将两者进行联系，以及如何将二者进行关联的……先从摘要看起：</p>
+<h1 id="📘摘要概述"><a href="#📘摘要概述" class="headerlink" title="📘摘要概述"></a>📘摘要概述</h1><ol>
+<li><p>抑郁症是一种广泛且高度遗传的心理疾病；</p>
+</li>
+<li><p>现有的影像研究已经发现，与<strong>抑郁症相关的皮质下结构</strong>(皮质下结构解剖结构见下图)体积异常；</p>
+</li>
+<li><p>但是抑郁症与皮质下体积之间的<strong>遗传基础</strong>仍然未被充分理解；</p>
+</li>
+<li><p>研究思路（从 GWAS → MiXeR → cFDR&#x2F;conjFDR → shared loci）：</p>
+<ol>
+<li>数据：最大规模的抑郁症全基因组关联研究（N &#x3D; 674,452 例）和 14 种皮层下容积表型（N &#x3D; 33,224 例）的汇总统计数据；</li>
+<li>方法：<ol>
+<li>双变量因果混合模型（MiXeR）调查多基因重叠的程度；</li>
+<li>通过条件&#x2F;联合 FDR 分析识别共享基因组位点</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>结果：MiXeR 分析显示：皮层下结构的体积特征与抑郁症共享了相当比例的遗传变异位点，随后使用共轭 FDR 分析共识别出了 44 个明确的共享遗传位点。这些共享位置映射的269个蛋白编码基因表现出特定的发展轨迹，其中55个基因的表达水平与抑郁和皮质下容量相关，30个基因与认知能力和行为症状相关。</p>
+</li>
+<li><p>意义：这些发现突显了抑郁症和皮质下的体积表型之间的共享遗传结构，丰富了我们对抑郁症神经生物学基础的理解。</p>
+<img src="../image/DepressionAndSubcorticalVolumes/Brain_Regions.jpg" srcset="/img/loading.gif" lazyload alt="Subcortical_Structures_of_the_Brain" style="zoom:50%;" /></li>
+</ol>
+<blockquote>
+<p>Jung, R. E., Ryman, S. G., Vakhtin, A. A., Carrasco, J., Wertz, C., &amp; Flores, R. A. (2014). Subcortical correlates of individual differences in aptitude. <em>PloS one</em>, <em>9</em>(2), e89425. </p>
+<p><strong>尾状核</strong>（caudate）、<strong>壳核</strong>（putamen）、<strong>苍白球</strong>（globus pallidus）、<strong>丘脑</strong>（thalamus）、<strong>海马体</strong>（hippocampus）、<strong>杏仁核</strong>（amygdala）、<strong>伏隔核</strong>（nucleus accumbens）</p>
+</blockquote>
+<p>好了**:laughing:**，摘要看完了，之前的问题可以回答了：1.皮质下体积就是皮质下结构的体积；2.遗传结构就是基因位点；3.关联方式就是MiXeR;</p>
+<p>现在我又有了问题：1.摘要说与抑郁症相关皮质下结构体积异常，那这个与抑郁症相关是怎么得到的呢？2.就是这个数据库是什么，基因的数据结构是怎么样的？3.就是这个模型是什么运行的，共轭FDR又是什么？</p>
+<hr>
+<p>笔者实力较弱，所以还需要先看一下前言与方法:yum:</p>
+<h1 id="open-file-folder-介绍"><a href="#open-file-folder-介绍" class="headerlink" title=":open_file_folder:介绍"></a>:open_file_folder:介绍</h1><ol>
+<li><p>抑郁症的流行病学调查与行为&#x2F;认知症状；</p>
+</li>
+<li><p>皮层下结构与在情绪、记忆和认知功能中发挥关键作用。所以皮层下结构在抑郁症神经生物学上有重要地位；</p>
+</li>
+<li><p>皮层下区域在抑郁症中展现出了结构上的变化；</p>
+</li>
+<li><p>在一个涉及 <strong>130 万人</strong>的超大规模<strong>元分析 GWAS</strong>中，研究者找到了<strong>243个与抑郁症相关的独立风险基因位点</strong>（loci）。</p>
+</li>
+<li><p>抑郁症和皮层下结构的体积性状都表现出<strong>高度的遗传性（heritability）</strong>，并且都具有<strong>多基因特征（polygenic nature）</strong>。所以有理由推测，两者在影像表现上的一些相似性，可能源自<strong>共享的遗传基础（shared genetic basis）</strong></p>
+</li>
+<li><p>以往研究使用LDSC（连锁不平衡评分回归）和PRS（多基因风险评分）等常见方法来探索抑郁和皮层下结构体积之间的遗传重叠，但结果发现：</p>
+<ul>
+<li>基因组范围的遗传相关性很弱甚至缺失（即传统方法找不到强的共享信号）。</li>
+</ul>
+<blockquote>
+<p>LDSC 会尝试计算<strong>所有 SNP 的效应方向是否一致</strong>来推断“两个性状是否遗传相关”。这会导致 <strong>正反抵消（加权求和接近于0）</strong></p>
+</blockquote>
+</li>
+<li><p>双变量因果混合物模型（MiXeR）:其最大优点在于<strong>它会考虑所有的遗传变异，而不管这些变异的效应方向是一致还是相反</strong>。通过这种方式，MiXeR能够更准确地评估出两种性状背后真正的遗传重叠程度，不会因为效应方向的矛盾而被误导。</p>
+</li>
+<li><p><strong>cond&#x2F;conjFDR 分析 (Conditional &amp; Conjunctional False Discovery Rate)</strong>:通过整合两个全基因组关联研究（GWAS）的数据，互相提供信息，从而“放大”那些微弱但真实的遗传信号。</p>
+</li>
+<li><p>流程设计:研究基于抑郁症和皮层下脑区体积表型的 GWAS 总结统计数据，首先使用 MiXeR 分析两者的多基因重叠情况。随后，使用条件 FDR（condFDR）和联合 FDR（conjFDR）方法识别新的与共享的遗传位点。进一步通过功能注释与基因定位，发现与两种表型相关的共享基因。我们随后分析这些共享基因在不同发育阶段的表达模式，并探索其表达对抑郁症、皮层下结构体积、认知能力和行为症状的潜在影响。<a href="#flow">跳转到图像注释</a></p>
+</li>
+</ol>
+<p><img src="/../image/DepressionAndSubcorticalVolumes/image-20250611164717419.png" srcset="/img/loading.gif" lazyload alt="Flowchart_of_the_study_design"></p>
+<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><h2 id="Quantification-of-genetic-overlap-with-MiXeR"><a href="#Quantification-of-genetic-overlap-with-MiXeR" class="headerlink" title="Quantification of genetic overlap with MiXeR"></a>Quantification of genetic overlap with MiXeR</h2><h3 id="🧬-一、单变量-MiXeR-分析（Univariate-MiXeR）"><a href="#🧬-一、单变量-MiXeR-分析（Univariate-MiXeR）" class="headerlink" title="🧬 一、单变量 MiXeR 分析（Univariate MiXeR）"></a>🧬 一、单变量 MiXeR 分析（Univariate MiXeR）</h3><p>✅ 目的：</p>
+<p>估算每个性状的：</p>
+<ul>
+<li>SNP 遗传率（SNP heritability）</li>
+<li>多基因性（Polygenicity，即影响该性状的变异数量）</li>
+<li>可发现性（Discoverability，即变异能被 GWAS 检测出来的概率）</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>抑郁症（Depression）</th>
+<th>皮层下体积（Subcortical Volumes）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SNP 遗传率</td>
+<td><strong>0.051</strong>（较低）</td>
+<td><strong>0.181 ~ 0.295</strong>（较高）</td>
+</tr>
+<tr>
+<td>多基因性</td>
+<td><strong>约 9400 个变异</strong>（高）</td>
+<td><strong>939 ~ 3207 个变异</strong>（低）</td>
+</tr>
+<tr>
+<td>可发现性</td>
+<td><strong>8.3 × 10⁻⁶</strong>（极低）</td>
+<td><strong>1.2 × 10⁻⁴ ~ 3.5 × 10⁻⁴</strong>（明显更高）</td>
+</tr>
+<tr>
+<td>达到 90% 遗传率所需样本量</td>
+<td><strong>约 6580 万人</strong></td>
+<td><strong>约 250 万 ~ 660 万人</strong></td>
+</tr>
+</tbody></table>
+<p>✅ 解释：</p>
+<ul>
+<li>抑郁症是一个典型的<strong>高度多基因但难以检测</strong>的复杂疾病。</li>
+<li>皮层下体积性状更容易在 GWAS 中检测出显著 SNP（discoverability 更高）。</li>
+</ul>
+<p><img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-024-52121-y/MediaObjects/41467_2024_52121_Fig1_HTML.png?as=webp" srcset="/img/loading.gif" lazyload alt="Genetic_overlap_between_depression_and_subcortical_volumes _using_MiXeR"></p>
+<blockquote>
+<p>Fig.  | Genetic overlap between depression and subcortical volumes  using MiXeR. </p>
+<p>a Heritability, polygenicity, and discoverability for each phenotype estimated by univariate MiXeR. b Venn diagrams showing MiXeR results of the estimated number of variants shared between depression and subcortical volumes.  The numbers of shared and trait-specific variants are shown in thousands with standard errors. The size of the circles reflects the degree of polygenicity. c The points indicate the proportions of shared variants with concordant effect directions. Source data are provided as a Source Data file. L left, R right.</p>
+</blockquote>
+<h3 id="🧬-二、双变量-MiXeR-分析（Bivariate-MiXeR）"><a href="#🧬-二、双变量-MiXeR-分析（Bivariate-MiXeR）" class="headerlink" title="🧬 二、双变量 MiXeR 分析（Bivariate MiXeR）"></a>🧬 二、双变量 MiXeR 分析（Bivariate MiXeR）</h3><p>✅ 目的：</p>
+<ul>
+<li>评估 <strong>抑郁症与各个皮层下脑区体积之间的共享遗传变异数量</strong></li>
+<li>判断共享变异方向是否一致（即是否协同作用）</li>
+</ul>
+<p>🔍 分析流程与标准：</p>
+<ul>
+<li>14 个皮层下结构中，有 8 个与抑郁症配对后模型拟合良好（AIC 条件满足）</li>
+</ul>
+<h4 id="🔍-结果1：共享变异比例"><a href="#🔍-结果1：共享变异比例" class="headerlink" title="🔍 结果1：共享变异比例"></a>🔍 结果1：<strong>共享变异比例</strong></h4><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>皮层下体积中与抑郁共享的变异比例</td>
+<td><strong>23.4% ~ 83.3%</strong></td>
+</tr>
+<tr>
+<td>抑郁中与皮层下体积共享的变异比例</td>
+<td><strong>4.1% ~ 17.9%</strong></td>
+</tr>
+<tr>
+<td>Dice 系数（共享变异&#x2F;总变异）</td>
+<td><strong>7.4% ~ 28.5%</strong></td>
+</tr>
+</tbody></table>
+<p>🔎 解读：共享程度不对称，体积特征比抑郁症更容易共享变异；这说明抑郁症中许多变异是特异的，而体积中的变异更泛化。</p>
+<h4 id="🔍-结果2：共享变异效应方向分析"><a href="#🔍-结果2：共享变异效应方向分析" class="headerlink" title="🔍 结果2：共享变异效应方向分析"></a>🔍 结果2：<strong>共享变异效应方向分析</strong></h4><ul>
+<li>即：共享变异是朝同一个方向影响两个性状，还是相反方向？</li>
+<li>结果显示：共享变异中<strong>方向一致性</strong>从 <strong>19.7% 到 73.6%</strong> 不等 → 有些脑区与抑郁症是<strong>正相关</strong>，有些是<strong>负相关</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>结构</th>
+<th>与抑郁相关方向</th>
+<th>相关系数 (rho)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>左尾状核（Left Caudate）</td>
+<td>正相关</td>
+<td><strong>0.634</strong>（最大）</td>
+</tr>
+<tr>
+<td>双侧壳核（Putamen）、右苍白球（Right Pallidum）</td>
+<td>正相关</td>
+<td>中等正相关</td>
+</tr>
+<tr>
+<td>左海马（Left Hippocampus）</td>
+<td>负相关</td>
+<td><strong>-0.784</strong>（最大）</td>
+</tr>
+</tbody></table>
+<p>🔎 解读：</p>
+<ul>
+<li>尾状核和壳核等区域可能在与抑郁的<strong>易感性或补偿机制</strong>有关；</li>
+<li>海马等区域则可能参与抑郁症的<strong>病理性萎缩或功能损伤</strong>。</li>
+</ul>
+<h3 id="📌-总结一句话："><a href="#📌-总结一句话：" class="headerlink" title="📌 总结一句话："></a>📌 总结一句话：</h3><p>使用 MiXeR 分析揭示了抑郁症和皮层下脑区体积之间存在不同程度的<strong>遗传重叠</strong>，但其变异数量、效应方向和生物学机制呈现出<strong>高度异质性</strong>，说明这两类性状虽有关联，但背后调控机制复杂且不完全重叠。</p>
+<h2 id="🧬-Identification-of-novel-and-shared-genetic-loci-cond-conjFDR"><a href="#🧬-Identification-of-novel-and-shared-genetic-loci-cond-conjFDR" class="headerlink" title="🧬 Identification of novel and shared genetic loci (cond&#x2F;conjFDR)"></a>🧬 Identification of novel and shared genetic loci (cond&#x2F;conjFDR)</h2><p>本部分通过 condFDR 和 conjFDR 方法，系统鉴定了抑郁症与皮层下脑区体积表型之间的 <strong>新颖和共享遗传位点</strong>，揭示其复杂的共遗传结构与潜在功能机制。</p>
+<p><img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-024-52121-y/MediaObjects/41467_2024_52121_Fig2_HTML.png?as=webp" srcset="/img/loading.gif" lazyload alt="Results of loci shared between depression and subcortical volumes."></p>
+<blockquote>
+<p><strong>a</strong> Manhattan plot showing the associations between depression and subcortical volumes identified by conjFDR. Each point represents a SNP and the point with a larger size and black border indicates a lead SNP. The <em>y</em>-axis represents the -log10-transformed conjFDR values for each SNP, and the <em>x</em>-axis reflects the chromosomal position. The dashed line represents the threshold of conjFDR &#x3D; 0.05, and the color of the dots represents different phenotypes. <strong>b</strong> Brain map showing the number of loci of each subcortical structure shared with depression. A color transition from white to red indicates an increasing number of shared loci. <strong>c</strong> LocusZoom plots of a genomic locus (chr18: 50358109-51055069, lead SNP: rs4632195) showing the regional SNP associations (two-sided -log10(<em>p</em>)) for depression and bilateral putamen volumes from the original GWAS summary data <strong>d</strong>. MRI slice plot of bilateral putamen volumes. Source data are provided as a Source Data file. Chr chromosome, L left, R right.</p>
+</blockquote>
+<hr>
+<h3 id="🔍-1-条件-FDR（condFDR）分析结果"><a href="#🔍-1-条件-FDR（condFDR）分析结果" class="headerlink" title="🔍 1. 条件 FDR（condFDR）分析结果"></a>🔍 <strong>1. 条件 FDR（condFDR）分析结果</strong></h3><table>
+<thead>
+<tr>
+<th>分析方向</th>
+<th>发现数量</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>抑郁症（以皮层下结构为条件）</td>
+<td>94 个关联位点（FDR &lt; 0.01）</td>
+<td>包含 <strong>7 个新位点</strong></td>
+</tr>
+<tr>
+<td>这些新位点关联的基因</td>
+<td>14 个</td>
+<td>GO富集分析未显著（因基因数过少）</td>
+</tr>
+<tr>
+<td>皮层下体积（以抑郁症为条件）</td>
+<td><strong>410 个位点</strong></td>
+<td>分布于 7 个脑区，详见下表</td>
+</tr>
+<tr>
+<td>汇总所有皮层下表型后</td>
+<td>233 个独立位点</td>
+<td>含 <strong>13 个新位点</strong>，映射到 <strong>57 个基因</strong></td>
+</tr>
+<tr>
+<td>GO 富集结果</td>
+<td>与 <strong>GABA能神经元发育</strong> 和 <strong>嘧啶核苷合成过程</strong> 相关（q&#x3D;4.0E-2）</td>
+<td></td>
+</tr>
+</tbody></table>
+<h4 id="➤-410-loci-在各脑区的分布："><a href="#➤-410-loci-在各脑区的分布：" class="headerlink" title="➤ 410 loci 在各脑区的分布："></a>➤ 410 loci 在各脑区的分布：</h4><table>
+<thead>
+<tr>
+<th>脑区</th>
+<th>左侧（N）</th>
+<th>右侧（N）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>丘脑 (Thalamus)</td>
+<td>22</td>
+<td>28</td>
+</tr>
+<tr>
+<td>尾状核 (Caudate)</td>
+<td>43</td>
+<td>41</td>
+</tr>
+<tr>
+<td>壳核 (Putamen)</td>
+<td>44</td>
+<td>43</td>
+</tr>
+<tr>
+<td>苍白球 (Pallidum)</td>
+<td>20</td>
+<td>35</td>
+</tr>
+<tr>
+<td>海马 (Hippocampus)</td>
+<td>25</td>
+<td>33</td>
+</tr>
+<tr>
+<td>杏仁核 (Amygdala)</td>
+<td>19</td>
+<td>12</td>
+</tr>
+<tr>
+<td>伏隔核 (Accumbens)</td>
+<td>25</td>
+<td>20</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="🧬-2-联合-FDR（conjFDR）分析结果"><a href="#🧬-2-联合-FDR（conjFDR）分析结果" class="headerlink" title="🧬 2. 联合 FDR（conjFDR）分析结果"></a>🧬 <strong>2. 联合 FDR（conjFDR）分析结果</strong></h3><table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>发现共享位点总数</td>
+<td><strong>77 个</strong>（conjFDR &lt; 0.05）</td>
+</tr>
+<tr>
+<td>涉及的皮层下脑区</td>
+<td>7 个</td>
+</tr>
+<tr>
+<td>映射至的 distinct 共享位点</td>
+<td><strong>44 个</strong></td>
+</tr>
+<tr>
+<td>其中新发现的：— 对抑郁症新— 对皮层下表型新— 双方皆新</td>
+<td>7 个17 个2 个</td>
+</tr>
+</tbody></table>
+<h4 id="➤-77-shared-loci-在各脑区的分布："><a href="#➤-77-shared-loci-在各脑区的分布：" class="headerlink" title="➤ 77 shared loci 在各脑区的分布："></a>➤ 77 shared loci 在各脑区的分布：</h4><table>
+<thead>
+<tr>
+<th>脑区</th>
+<th>左侧（N）</th>
+<th>右侧（N）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>丘脑</td>
+<td>9</td>
+<td>13</td>
+</tr>
+<tr>
+<td>尾状核</td>
+<td>8</td>
+<td>4</td>
+</tr>
+<tr>
+<td>壳核</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td>苍白球</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td>海马</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td>杏仁核</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>伏隔核</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="⭐-3-最显著共享位点："><a href="#⭐-3-最显著共享位点：" class="headerlink" title="⭐ 3. 最显著共享位点："></a>⭐ <strong>3. 最显著共享位点：</strong></h3><ul>
+<li><strong>位置</strong>：chr18: 50358109–51055069</li>
+<li><strong>SNP</strong>：rs4632195</li>
+<li><strong>对应脑区</strong>：双侧壳核（putamen）</li>
+<li><strong>conjFDR</strong>：<ul>
+<li>左侧 putamen：1.0E−8</li>
+<li>右侧 putamen：4.3E−9</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="🧬-4-功能注释结果（44-个共享位点）"><a href="#🧬-4-功能注释结果（44-个共享位点）" class="headerlink" title="🧬 4. 功能注释结果（44 个共享位点）"></a>🧬 <strong>4. 功能注释结果（44 个共享位点）</strong></h3><table>
+<thead>
+<tr>
+<th>内容</th>
+<th>发现</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>映射基因数量</td>
+<td>269 个 protein-coding genes</td>
+</tr>
+<tr>
+<td>GO 富集条目</td>
+<td>42 个（q &lt; 0.05）</td>
+</tr>
+<tr>
+<td>代表性生物过程</td>
+<td>神经投射发育、轴突发生调控、中枢神经系统发育</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="🧪-5-SNP-功能特征分析："><a href="#🧪-5-SNP-功能特征分析：" class="headerlink" title="🧪 5. SNP 功能特征分析："></a>🧪 <strong>5. SNP 功能特征分析：</strong></h3><table>
+<thead>
+<tr>
+<th>类别</th>
+<th>百分比</th>
+<th>示例或说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>位于内含子区</td>
+<td>58.7%</td>
+<td>普遍情况</td>
+</tr>
+<tr>
+<td>位于 lncRNA 内含子区</td>
+<td>25.4%</td>
+<td></td>
+</tr>
+<tr>
+<td>非同义突变 SNP</td>
+<td>18 个</td>
+<td>可能有直接功能</td>
+</tr>
+<tr>
+<td><strong>CADD &gt; 12.37</strong>（潜在致病）</td>
+<td>3.7%</td>
+<td>最高为 rs62618693（CADD &#x3D; 31）</td>
+</tr>
+<tr>
+<td><strong>RegulomeDB &lt; 3</strong>（调控功能）</td>
+<td>10.3%</td>
+<td></td>
+</tr>
+<tr>
+<td>开放染色质区域（ChromHMM &lt; 8）</td>
+<td>90.1%</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="🧪-6-效应异质性分析（Cochran’s-Q-test）"><a href="#🧪-6-效应异质性分析（Cochran’s-Q-test）" class="headerlink" title="🧪 6. 效应异质性分析（Cochran’s Q test）"></a>🧪 <strong>6. 效应异质性分析（Cochran’s Q test）</strong></h3><table>
+<thead>
+<tr>
+<th>分析对象</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>所有 44 个 SNP 在全部 14 个脑区中</td>
+<td>有 30 个存在显著效应异质性（p &lt; 0.05）</td>
+</tr>
+<tr>
+<td>其余 14 个</td>
+<td>无显著异质性</td>
+</tr>
+<tr>
+<td>双侧脑区（如左右尾状核）</td>
+<td>仅<strong>伏隔核</strong>中一对有异质性</td>
+</tr>
+<tr>
+<td>异质性最多的脑区对</td>
+<td>左尾状核 – 右海马（20 个 SNP）</td>
+</tr>
+<tr>
+<td>异质性最少的脑区对</td>
+<td>左海马 – 左杏仁核（2 个 SNP）</td>
+</tr>
+</tbody></table>
+<hr>
+<p><img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-024-52121-y/MediaObjects/41467_2024_52121_Fig2_HTML.png?as=webp" srcset="/img/loading.gif" lazyload alt="Results of loci shared between depression and subcortical volumes."></p>
+<blockquote>
+<p><strong>a</strong> Manhattan plot showing the associations between depression and subcortical volumes identified by conjFDR. Each point represents a SNP and the point with a larger size and black border indicates a lead SNP. The <em>y</em>-axis represents the -log10-transformed conjFDR values for each SNP, and the <em>x</em>-axis reflects the chromosomal position. The dashed line represents the threshold of conjFDR &#x3D; 0.05, and the color of the dots represents different phenotypes. <strong>b</strong> Brain map showing the number of loci of each subcortical structure shared with depression. A color transition from white to red indicates an increasing number of shared loci. <strong>c</strong> LocusZoom plots of a genomic locus (chr18: 50358109-51055069, lead SNP: rs4632195) showing the regional SNP associations (two-sided -log10(<em>p</em>)) for depression and bilateral putamen volumes from the original GWAS summary data <strong>d</strong>. MRI slice plot of bilateral putamen volumes. Source data are provided as a Source Data file. Chr chromosome, L left, R right.</p>
+</blockquote>
+<h2 id="Developmental-trajectories-of-shared-genes"><a href="#Developmental-trajectories-of-shared-genes" class="headerlink" title="Developmental trajectories of shared genes"></a>Developmental trajectories of shared genes</h2><h3 id="🧠-使用数据："><a href="#🧠-使用数据：" class="headerlink" title="🧠 使用数据："></a>🧠 使用数据：</h3><ul>
+<li><strong>数据来源</strong>：PsychENCODE 项目</li>
+<li><strong>内容类型</strong>：人类大脑 <strong>不同发育阶段</strong> 和 <strong>不同脑区</strong> 的基因表达数据</li>
+</ul>
+<p>利用了PsychENCODE35的时空大脑基因表达数据，作者研究了抑郁症与皮层下结构共有基因的发育表达轨迹。如Fig. 3c</p>
+<p><img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-024-52121-y/MediaObjects/41467_2024_52121_Fig3_HTML.png?as=webp" srcset="/img/loading.gif" lazyload alt="Fig. 3: Results of functional annotation and gene expression analyses for the shared loci."></p>
+<table>
+<thead>
+<tr>
+<th>窗口</th>
+<th>阶段</th>
+<th>具体时间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>W1</td>
+<td>早期胎儿期</td>
+<td>胎龄 8–9 周（PCW 8–9）</td>
+</tr>
+<tr>
+<td>W3–4</td>
+<td>中期胎儿期</td>
+<td>胎龄 16–22 周（PCW 16–22）</td>
+</tr>
+<tr>
+<td>W6</td>
+<td>婴幼儿早期</td>
+<td>生后 0.5–2.6 岁（PY 0.5–2.6）</td>
+</tr>
+</tbody></table>
+<p><strong>各脑区共享基因表达趋势</strong></p>
+<table>
+<thead>
+<tr>
+<th>脑区</th>
+<th>表达轨迹</th>
+<th>高峰期</th>
+<th>后续变化</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>伏隔核（accumbens）</strong> <strong>苍白球（pallidum）</strong> <strong>丘脑（thalamus）</strong></td>
+<td>表达模式相似：中胎期达到高峰</td>
+<td><strong>PCW 16–22</strong>（W3–4）</td>
+<td>稍微下降后，在 W6（PY 0.5–2.6）进入<strong>平台期</strong></td>
+</tr>
+<tr>
+<td><strong>海马（hippocampus）</strong> <strong>杏仁核（amygdala）</strong> <strong>尾状核（caudate）</strong></td>
+<td>早孕期即达高峰，然后持续下降</td>
+<td><strong>PCW 8–9</strong>（W1）</td>
+<td>表达量持续下降，至婴幼儿期（PY 0.5–2.6）达到最低</td>
+</tr>
+<tr>
+<td><strong>壳核（putamen）</strong></td>
+<td>也是早期高峰</td>
+<td><strong>PCW 8–9</strong>（W1）</td>
+<td><strong>持续下降</strong>，与上面类似但无平台期</td>
+</tr>
+</tbody></table>
+<h2 id="🧠Expression-trait-associations（基因表达与性状的关联分析）"><a href="#🧠Expression-trait-associations（基因表达与性状的关联分析）" class="headerlink" title="🧠Expression-trait associations（基因表达与性状的关联分析）"></a>🧠Expression-trait associations（基因表达与性状的关联分析）</h2><h3 id="🔬-工具与目的："><a href="#🔬-工具与目的：" class="headerlink" title="🔬 工具与目的："></a>🔬 工具与目的：</h3><ul>
+<li>使用 <strong>S-MultiXcan</strong> 工具对<strong>每一对“抑郁症–皮层下体积表型”共享基因性状</strong>进行分析。</li>
+<li>目标：研究这些 <strong>共享基因在大脑中的表达水平</strong>，是否同时与：<ul>
+<li>抑郁症；</li>
+<li>对应的皮层下脑区体积；<br> 存在显著统计关联。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="📊-分析结果概览："><a href="#📊-分析结果概览：" class="headerlink" title="📊 分析结果概览："></a>📊 分析结果概览：</h3><ul>
+<li>共发现 <strong>137 个显著关联</strong>（FDR 校正后）；</li>
+<li>涉及 <strong>71 个共享基因</strong> 与不同的皮层下体积；</li>
+<li>其中有 <strong>55 个基因</strong> 同时也与抑郁症显著相关。</li>
+</ul>
+<h2 id="link-Cognitive-and-behavioral-associations"><a href="#link-Cognitive-and-behavioral-associations" class="headerlink" title=":link:Cognitive and behavioral associations"></a>:link:Cognitive and behavioral associations</h2><p>研究目的：抑郁症–皮层下体积表型”共享基因是否进一步影响抑郁症相关的认知和行为性状；</p>
+<p>共有 8 种认知能力和 15 种行为症状的数据</p>
+<h3 id="🧬-分析背景："><a href="#🧬-分析背景：" class="headerlink" title="🧬 分析背景："></a>🧬 分析背景：</h3><ul>
+<li>分析对象：<strong>55个“共享基因”</strong><ul>
+<li>即那些 <strong>同时与抑郁症和至少一个皮层下脑区体积</strong>相关的基因；</li>
+</ul>
+</li>
+<li>工具：<strong>S-MultiXcan</strong>；</li>
+<li>目标：探究这些基因的<strong>大脑表达水平</strong>是否与：<ul>
+<li><strong>认知能力（cognitive abilities）</strong>；</li>
+<li><strong>行为症状（behavioral symptoms）</strong>；<br> 存在统计学显著关联。</li>
+</ul>
+</li>
+</ul>
+<h3 id="📊-主要发现："><a href="#📊-主要发现：" class="headerlink" title="📊 主要发现："></a>📊 主要发现：</h3><table>
+<thead>
+<tr>
+<th>分析方向</th>
+<th>显著关联数</th>
+<th>涉及基因数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>🧠 基因表达 vs. 行为症状</td>
+<td>30 个显著关联</td>
+<td>30 个基因</td>
+</tr>
+<tr>
+<td>🧠 基因表达 vs. 认知能力</td>
+<td>59 个显著关联</td>
+<td>30 个基因</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>👉 说明：有些基因同时关联了多个认知与行为指标。</p>
+</blockquote>
+<p>此外，文章还观察到同一基因在不同皮层下区域的表达水平与不同的认知能力或行为症状相关（图 4b，c）。</p>
+<p><img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-024-52121-y/MediaObjects/41467_2024_52121_Fig4_HTML.png?as=webp" srcset="/img/loading.gif" lazyload alt="Fig. 4: Associations of the expression of shared genes in the brain with cognitive abilities and behavioral symptoms."></p>
+<blockquote>
+<p>Fig. 4 | Associations of the expression of shared genes in the brain with cognitive abilities and behavioral symptoms. a Bubble plot showing significant  expression-trait associations (two-sided q &lt; 0.05, FDR corrected). The x-axis shows the shared genes, and the y-axis shows cognitive abilities and behavioral symptoms. The size and color of the bubbles demonstrate the significance level. The gray bubbles represent non-significant associations. b The bar plots show the significance level (uncorrected two-sided p-values) of the expression of LRRC37A2 in five subcortical structures with the VNR and RT. c The bar plots show the significance level (uncorrected two-sided p-values) of PLEKHM1 expression in five subcortical structures associated with feelings of worthlessness during the worst  period of depression and VNR. Source data are provided as a Source Data file. ConcWorst difficulty concentrating during worst depression, DSST digit symbol substitution task, Inadequacy recent feelings of inadequacy, Interest recent lack of interest or pleasure in doing things, Movement recent changes in speed&#x2F;amount of moving or speaking, PM pairs matching, RT reaction time, SleepIssues trouble falling or staying asleep, or sleeping too much, SleepMuch sleeping too much, SleepTrouble trouble falling asleep, TiredRecent recent feelings of tiredness or low energy, TiredWorst feelings of tiredness during the worst episode of depression, TMT-B trail making test B, VNR verbal–numerical reasoning, WorthlessWorst feelings of worthlessness during worst period of depression.</p>
+</blockquote>
+<h3 id="⭐️-多重影响基因（影响广泛的代表性基因）："><a href="#⭐️-多重影响基因（影响广泛的代表性基因）：" class="headerlink" title="⭐️ 多重影响基因（影响广泛的代表性基因）："></a>⭐️ 多重影响基因（影响广泛的代表性基因）：</h3><p><strong>5 个基因</strong> 与<strong>5种以上认知&#x2F;行为指标</strong>显著相关</p>
+<h1 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h1><p><a id="flow"></a></p>
+<p><img src="/../image/DepressionAndSubcorticalVolumes/image-20250611164717419.png" srcset="/img/loading.gif" lazyload alt="Flowchart_of_the_study_design"></p>
+<h2 id="🧭-整体流程结构"><a href="#🧭-整体流程结构" class="headerlink" title="🧭 整体流程结构"></a>🧭 整体流程结构</h2><p>该图分为四个主要模块，从上到下依次为：</p>
+<ol>
+<li><strong>GWAS summary</strong></li>
+<li><strong>Cross-trait analyses</strong></li>
+<li><strong>Functional analyses</strong></li>
+<li><strong>Gene-expression analyses</strong></li>
+</ol>
+<p>中间用虚线箭头表示数据或信息的流向。</p>
+<hr>
+<h3 id="🟦-1-GWAS-Summary"><a href="#🟦-1-GWAS-Summary" class="headerlink" title="🟦 1. GWAS Summary"></a>🟦 1. GWAS Summary</h3><p><strong>图中内容：</strong></p>
+<ul>
+<li>左侧是抑郁症（Depression）的曼哈顿图</li>
+<li>右侧是皮层下脑区体积（Subcortical volumes）的曼哈顿图</li>
+<li>旁边展示了大脑皮层下结构的3D可视化</li>
+</ul>
+<p><strong>含义：</strong></p>
+<ul>
+<li>使用了两个独立的GWAS数据集，分别研究抑郁症和皮层下脑区体积的遗传基础。</li>
+</ul>
+<hr>
+<h3 id="🟥-2-Cross-trait-analyses"><a href="#🟥-2-Cross-trait-analyses" class="headerlink" title="🟥 2. Cross-trait analyses"></a>🟥 2. Cross-trait analyses</h3><p>这一部分核心是识别两个性状之间的<strong>共享遗传位点</strong>。</p>
+<h4 id="（1）Global-polygenic-overlap-using-MiXeR"><a href="#（1）Global-polygenic-overlap-using-MiXeR" class="headerlink" title="（1）Global polygenic overlap using MiXeR"></a>（1）Global polygenic overlap using MiXeR</h4><ul>
+<li>使用 MiXeR 方法，评估两个表型的<strong>全局多基因重叠程度</strong></li>
+<li>Venn图展示了每个表型的有效SNP数量及其重叠（蓝色1.7表示仅在抑郁中显著，橙色7.8仅在体积中显著，重叠为1.6）</li>
+</ul>
+<h4 id="（2）Identifying-novel-loci-using-condFDR"><a href="#（2）Identifying-novel-loci-using-condFDR" class="headerlink" title="（2）Identifying novel loci using condFDR"></a>（2）Identifying novel loci using condFDR</h4><ul>
+<li>显示的是一个 Q-Q 图，用条件 FDR 方法在一个性状上利用另一个性状信息来<strong>提升新SNP的发现效率</strong></li>
+</ul>
+<h4 id="（3）Identifying-shared-loci-using-conjFDR"><a href="#（3）Identifying-shared-loci-using-conjFDR" class="headerlink" title="（3）Identifying shared loci using conjFDR"></a>（3）Identifying shared loci using conjFDR</h4><ul>
+<li>曼哈顿图中展示了通过 conjFDR 方法发现的<strong>共享遗传位点</strong>，即对两个表型都有显著影响的SNP</li>
+</ul>
+<hr>
+<h3 id="🟩-3-Functional-analyses"><a href="#🟩-3-Functional-analyses" class="headerlink" title="🟩 3. Functional analyses"></a>🟩 3. Functional analyses</h3><p>这一部分聚焦于对共享位点的<strong>生物学解释</strong></p>
+<h4 id="（1）Functional-annotation"><a href="#（1）Functional-annotation" class="headerlink" title="（1）Functional annotation"></a>（1）Functional annotation</h4><ul>
+<li>条形图显示了共享SNP在不同功能区域（如启动子、调控区、非编码区等）的分布频率</li>
+</ul>
+<h4 id="（2）Gene-mapping"><a href="#（2）Gene-mapping" class="headerlink" title="（2）Gene mapping"></a>（2）Gene mapping</h4><ul>
+<li>使用多种策略（染色质相互作用、表达QTL、物理位置）将显著SNP映射到潜在的基因上</li>
+</ul>
+<hr>
+<h3 id="🟫-4-Gene-expression-analyses"><a href="#🟫-4-Gene-expression-analyses" class="headerlink" title="🟫 4. Gene-expression analyses"></a>🟫 4. Gene-expression analyses</h3><p>进一步分析这些<strong>共享基因</strong>在不同阶段、不同表型中的表现。</p>
+<h4 id="（1）Spatiotemporal-gene-expression-trajectory"><a href="#（1）Spatiotemporal-gene-expression-trajectory" class="headerlink" title="（1）Spatiotemporal gene expression trajectory"></a>（1）Spatiotemporal gene expression trajectory</h4><ul>
+<li>左侧图展示了不同时间点（出生前后）脑区中共享基因的表达变化轨迹</li>
+<li>横轴是发育时间，纵轴是表达水平，不同颜色表示不同脑区</li>
+</ul>
+<h4 id="（2）Expression-trait-associations"><a href="#（2）Expression-trait-associations" class="headerlink" title="（2）Expression-trait associations"></a>（2）Expression-trait associations</h4><ul>
+<li>右侧热图展示了基因表达与多个表型（如抑郁、体积、认知等）的相关性</li>
+<li>越深的颜色表示相关性越强</li>
+</ul>
+<hr>
+<h3 id="✅-总结一句话"><a href="#✅-总结一句话" class="headerlink" title="✅ 总结一句话"></a>✅ 总结一句话</h3><p>这张图从原始GWAS数据出发，结合<strong>统计分析（MiXeR、FDR）+功能注释+表达分析</strong>，层层推进，最终识别出与<strong>抑郁症和皮层下脑区体积均相关的关键基因</strong>，并探索其<strong>在不同生命阶段的表达模式</strong>及其对认知和行为的影响。</p>
+<p>以下是文中提到的关键指标解释表，适用于阅读理解 MiXeR 分析报告或科研论文：</p>
+<hr>
+<h2 id="🧪-MiXeR-分析中常见指标解释表"><a href="#🧪-MiXeR-分析中常见指标解释表" class="headerlink" title="🧪 MiXeR 分析中常见指标解释表"></a>🧪 MiXeR 分析中常见指标解释表</h2><table>
+<thead>
+<tr>
+<th>指标名称</th>
+<th>英文名</th>
+<th>含义解释</th>
+<th>解读要点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>SNP 遗传率</strong></td>
+<td>SNP heritability</td>
+<td>某一性状中可以被<strong>SNP 解释的遗传变异比例</strong>（属于全遗传率的一部分）</td>
+<td>数值越高，说明这个性状更容易被基因解释，GWAS 分析更有可能找到显著结果</td>
+</tr>
+<tr>
+<td><strong>多基因性</strong></td>
+<td>Polygenicity</td>
+<td>影响该性状的<strong>有效变异（SNP）数量</strong></td>
+<td>越高表示该性状由大量小效应变异控制（典型如抑郁症），很难用单一或少量基因解释</td>
+</tr>
+<tr>
+<td><strong>可发现性</strong></td>
+<td>Discoverability</td>
+<td>某性状中的遗传变异在 GWAS 中被发现的可能性；数学上等价于平均效应平方</td>
+<td>数值越大表示 SNP 效应越大、易于检测；越小表示 GWAS 要更大样本量才能发现它</td>
+</tr>
+<tr>
+<td><strong>样本量估计</strong></td>
+<td>Required sample size for 90% heritability</td>
+<td>达到 90% SNP 遗传率所需的 GWAS 样本规模</td>
+<td>抑郁症需要更大的样本才能找到其相关变异（例如需要上千万样本）</td>
+</tr>
+<tr>
+<td><strong>共享变异比例</strong></td>
+<td>Proportion of shared variants</td>
+<td>两个性状之间<strong>共享的有效遗传变异的比例</strong></td>
+<td>比例不对称是正常的，比如 A 性状与 B 性状共享一部分，但反过来不一定一样多</td>
+</tr>
+<tr>
+<td><strong>Dice 系数</strong></td>
+<td>Dice coefficient</td>
+<td><img src="/../image/DepressionAndSubcorticalVolumes/image-20250611172353348.png" srcset="/img/loading.gif" lazyload alt="image-20250611172353348">衡量两个性状遗传重叠的程度</td>
+<td>值越高，表示两个性状<strong>遗传基础越相似</strong></td>
+</tr>
+<tr>
+<td><strong>一致效应比例</strong></td>
+<td>Proportion of concordant effects</td>
+<td>在共享变异中，SNP 对两个性状方向**相同（均为正或均为负）**的比例</td>
+<td>可以揭示共享变异是否支持类似或相反的生物作用机制</td>
+</tr>
+<tr>
+<td><strong>相关系数</strong></td>
+<td>ρ（rho）</td>
+<td>两个性状共享变异的<strong>效应方向之间的相关性</strong>（如尾状核与抑郁症的正相关）</td>
+<td>正值表示两性状朝相同方向变化；负值表示反方向变化</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="🧩-举例补充："><a href="#🧩-举例补充：" class="headerlink" title="🧩 举例补充："></a>🧩 举例补充：</h3><ul>
+<li>抑郁症 SNP heritability &#x3D; 0.051 → 说明基因只能解释约 5.1% 的变异，说明其受环境和复杂交互影响大。</li>
+<li>抑郁的 polygenicity &#x3D; 9400 → 高度多基因特征，许多小效应 SNP。</li>
+<li>discoverability &#x3D; 8.3E-6 → 说明要非常大的样本量才能检测到这些变异。</li>
+<li>Dice &#x3D; 28.5%（比如与尾状核） → 说明两性状在该脑区上有相对较强的遗传重叠。</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" class="category-chain-item">论文阅读</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%8E%9F%E5%88%9B/" class="print-no-link">#原创</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>抑郁症与大脑皮层下结构体积之间的共同遗传基础</div>
+      <div>https://xingdayup.github.io/2025/06/11/DepressionAndSubcorticalVolumes/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>Jesse Chen</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>June 11, 2025</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025/06/27/Microglial-expressed-genetic-risk-variants-And-Brain/" title="Microglial-expressed genetic risk variants, cognitive function and brain volume in patients with schizophrenia and healthy controls">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Microglial-expressed genetic risk variants, cognitive function and brain volume in patients with schizophrenia and healthy controls</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/05/31/ukb_introduction/" title="UKB数据库介绍">
+                        <span class="hidden-mobile">UKB数据库介绍</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"vdZLnTIdTwJmBWlW8LgSqJcp-gzGzoHsz","appKey":"SraJp3AuS35E7IyflZgQqEt2","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        Views: 
+        <span id="busuanzi_value_site_pv"></span>
+        
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        Visitors: 
+        <span id="busuanzi_value_site_uv"></span>
+        
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
