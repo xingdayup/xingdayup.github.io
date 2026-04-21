@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Harness-Engineering</title>
+    <link href="/2026/04/21/Harmess_Engineering/"/>
+    <url>/2026/04/21/Harmess_Engineering/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Harness-Engineering"><a href="#Harness-Engineering" class="headerlink" title="Harness Engineering"></a>Harness Engineering</h1><p><code>Harness</code>原本的意思是缰绳、玩具，它不是让马变得更聪明，而是让马能稳定、可靠，按方向去拉车，放到AI 语境里，<code>Harness Engineering</code> 指的就是围绕大模型构建的一整套执行与控制系统，它把模型包裹起来，给模型装上手脚、规则、记忆、反馈和约束，让它不只是会说，还能真的做事，而且持续的、可靠的做事。</p><h2 id="AI-AGENT"><a href="#AI-AGENT" class="headerlink" title="AI AGENT"></a>AI AGENT</h2><p>AI Agent &#x3D; LLM +框架（Openclaw&#x2F;Claude Code）</p><p><img src="/../image/Harmess_Engineering/image-20260421102528305.png" alt="image-20260421102528305"></p><h2 id="怎么强化AI-Agent"><a href="#怎么强化AI-Agent" class="headerlink" title="怎么强化AI Agent"></a>怎么强化AI Agent</h2><h3 id="LLM训练和微调"><a href="#LLM训练和微调" class="headerlink" title="LLM训练和微调"></a>LLM训练和微调</h3><h3 id="harness-enginerring"><a href="#harness-enginerring" class="headerlink" title="harness enginerring"></a>harness enginerring</h3><p><img src="/../image/Harmess_Engineering/image-20260421103123778.png" alt="image-20260421103123778"></p><p>prompt：随着模型越来越好，变得不需要</p><p>context：提供足够的信息</p><p>harness：</p><p><img src="/../image/Harmess_Engineering/image-20260421103929725.png" alt="image-20260421103929725"></p><h4 id="Agent-md（认知框架）"><a href="#Agent-md（认知框架）" class="headerlink" title="Agent.md（认知框架）"></a>Agent.md（认知框架）</h4><p><img src="/../image/Harmess_Engineering/image-20260421104046262.png" alt="image-20260421104046262"></p><p><img src="/../image/Harmess_Engineering/image-20260421104511039.png" alt="image-20260421104511039"></p><p>agent.md也不能太长</p><h4 id="能力边界"><a href="#能力边界" class="headerlink" title="能力边界"></a>能力边界</h4><p><img src="/../image/Harmess_Engineering/image-20260421105221527.png" alt="image-20260421105221527"></p><h4 id="行为"><a href="#行为" class="headerlink" title="行为"></a>行为</h4><p><img src="/../image/Harmess_Engineering/image-20260421110133350.png" alt="image-20260421110133350"></p><p><img src="/../image/Harmess_Engineering/image-20260421110257183.png" alt="image-20260421110257183"></p><p>不同的语言模型可能不适合不同的Harness</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>note</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>LLM</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>AI领域基础概念</title>
     <link href="/2026/01/17/AIagent01-LLM/"/>
     <url>/2026/01/17/AIagent01-LLM/</url>
